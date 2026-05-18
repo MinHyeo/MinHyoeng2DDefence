@@ -16,28 +16,28 @@
   {
     "Id": "tower_03",
     "Name": "돌 원시인",
-    "Description": null,
+    "Description": "ss",
     "EntityType": "Tower",
     "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
   },
   {
     "Id": "tower_04",
     "Name": "화살 원시인",
-    "Description": null,
+    "Description": "ddd",
     "EntityType": "Tower",
     "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
   },
   {
     "Id": "tower_05",
     "Name": "독침 원시인",
-    "Description": null,
+    "Description": "ddd",
     "EntityType": "Tower",
     "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
   },
   {
     "Id": "tower_06",
     "Name": "밧줄 원시인",
-    "Description": null,
+    "Description": "ddd",
     "EntityType": "Tower",
     "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
   },
@@ -65,14 +65,14 @@
   {
     "Id": "enemy_04",
     "Name": "검치호",
-    "Description": null,
+    "Description": "ddd",
     "EntityType": "Enemy",
     "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
   },
   {
     "Id": "enemy_05",
     "Name": "매머드",
-    "Description": null,
+    "Description": "dddas",
     "EntityType": "Enemy",
     "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
   }

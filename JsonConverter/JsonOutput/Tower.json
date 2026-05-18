@@ -1,26 +1,26 @@
 [
   {
     "Id": "tower_01",
-    "Attack Damage": 10,
-    "Attack Range": 5,
-    "Attack Speed": 3,
-    "Projectile Speed": 0,
-    "Move Type": "Ground",
-    "Build Cost": 50,
-    "Sell Price": 25,
-    "Upgrade Id": null,
-    "Upgrade Cost": 45
+    "AttackDamage": 10,
+    "AttackRange": 5,
+    "AttackSpeed": 3,
+    "ProjectileSpeed": 0,
+    "MoveType": "Ground",
+    "BuildPrice": 50,
+    "SellPrice": 25,
+    "UpgradeId": "ddd",
+    "UpgradePrice": 45
   },
   {
     "Id": "tower_02",
-    "Attack Damage": 9,
-    "Attack Range": 7,
-    "Attack Speed": 5,
-    "Projectile Speed": 10,
-    "Move Type": "Ground, Sky",
-    "Build Cost": 75,
-    "Sell Price": 50,
-    "Upgrade Id": null,
-    "Upgrade Cost": 60
+    "AttackDamage": 9,
+    "AttackRange": 7,
+    "AttackSpeed": 5,
+    "ProjectileSpeed": 10,
+    "MoveType": "Ground, Sky",
+    "BuildPrice": 75,
+    "SellPrice": 50,
+    "UpgradeId": "ddd",
+    "UpgradePrice": 60
   }
 ]
