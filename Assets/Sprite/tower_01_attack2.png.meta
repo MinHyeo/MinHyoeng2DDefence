@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: ec758a50da1a34641a7531ddccd8751d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2698274753737222567
+    second: tower_01_attack2_0
+  - first:
+      213: 4723576934496091224
+    second: tower_01_attack2_1
+  - first:
+      213: 166776253383392318
+    second: tower_01_attack2_2
+  - first:
+      213: -3527137913794908074
+    second: tower_01_attack2_3
+  - first:
+      213: -7466912026208749947
+    second: tower_01_attack2_4
+  - first:
+      213: 8557856473544434469
+    second: tower_01_attack2_5
+  - first:
+      213: -1504522467658873717
+    second: tower_01_attack2_6
+  - first:
+      213: 7120009298331269817
+    second: tower_01_attack2_7
+  - first:
+      213: 8986235159388632597
+    second: tower_01_attack2_8
+  - first:
+      213: -4593735980135468727
+    second: tower_01_attack2_9
+  - first:
+      213: -9222388379506454817
+    second: tower_01_attack2_10
+  - first:
+      213: 3903521983960855242
+    second: tower_01_attack2_11
+  - first:
+      213: 3501318579971836862
+    second: tower_01_attack2_12
+  - first:
+      213: -5624619421860222071
+    second: tower_01_attack2_13
+  - first:
+      213: 6615609825344968182
+    second: tower_01_attack2_14
+  - first:
+      213: -6442078812486512374
+    second: tower_01_attack2_15
+  - first:
+      213: -1718289461438728253
+    second: tower_01_attack2_16
+  - first:
+      213: 499097647738943309
+    second: tower_01_attack2_17
+  - first:
+      213: 7162879141147728768
+    second: tower_01_attack2_18
+  - first:
+      213: 304607277039772057
+    second: tower_01_attack2_19
+  - first:
+      213: -2862450673783303893
+    second: tower_01_attack2_20
+  - first:
+      213: -4706854424135579990
+    second: tower_01_attack2_21
+  - first:
+      213: -2517490930103306409
+    second: tower_01_attack2_22
+  - first:
+      213: -5816181044671932559
+    second: tower_01_attack2_23
+  - first:
+      213: 3949014203465281049
+    second: tower_01_attack2_24
+  - first:
+      213: -6714116122450268730
+    second: tower_01_attack2_25
+  - first:
+      213: -3679488786870139030
+    second: tower_01_attack2_26
+  - first:
+      213: -2021767245527077413
+    second: tower_01_attack2_27
+  - first:
+      213: -4554736744677419509
+    second: tower_01_attack2_28
+  - first:
+      213: -4019779992580494835
+    second: tower_01_attack2_29
+  - first:
+      213: 8194769009252634479
+    second: tower_01_attack2_30
+  - first:
+      213: -1173314565965985561
+    second: tower_01_attack2_31
+  - first:
+      213: 2849374524920054044
+    second: tower_01_attack2_32
+  - first:
+      213: 6462413995317138503
+    second: tower_01_attack2_33
+  - first:
+      213: 4033345575929543098
+    second: tower_01_attack2_34
+  - first:
+      213: 7325863499677509740
+    second: tower_01_attack2_35
+  - first:
+      213: 2548771523576936068
+    second: tower_01_attack2_36
+  - first:
+      213: -4581299768797227421
+    second: tower_01_attack2_37
+  - first:
+      213: 5031534884382948816
+    second: tower_01_attack2_38
+  - first:
+      213: 3407091177147889973
+    second: tower_01_attack2_39
+  - first:
+      213: 5719414669413631434
+    second: tower_01_attack2_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tower_01_attack2_0
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1415
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9569615586dcd8ad0800000000000000
+      internalID: -2698274753737222567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_1
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1415
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c3ed102348d8140800000000000000
+      internalID: 4723576934496091224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_2
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1415
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c33eb6e12805200800000000000000
+      internalID: 166776253383392318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_3
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1415
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650317641c61d0fc0800000000000000
+      internalID: -3527137913794908074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_4
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1415
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5863cb4d213306890800000000000000
+      internalID: -7466912026208749947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_5
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1415
+        width: 228
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523a4680f1d93c670800000000000000
+      internalID: 8557856473544434469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_6
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1415
+        width: 209
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84499679ccde1be0800000000000000
+      internalID: -1504522467658873717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_7
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1416
+        width: 58
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba7380cbba5fc260800000000000000
+      internalID: 7120009298331269817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_8
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1415
+        width: 86
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5163c7f244585bc70800000000000000
+      internalID: 8986235159388632597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_9
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1415
+        width: 155
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9413818f675cf30c0800000000000000
+      internalID: -4593735980135468727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_10
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1400
+        width: 32
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdec3d291ae730080800000000000000
+      internalID: -9222388379506454817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_11
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 1414
+        width: 102
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac23aea00981c2630800000000000000
+      internalID: 3903521983960855242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_12
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1415
+        width: 142
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb42bc92be279030800000000000000
+      internalID: 3501318579971836862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_13
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1400
+        width: 32
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b2243bf6651f1b0800000000000000
+      internalID: -5624619421860222071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 827
+        width: 628
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5554cc51e5fcb50800000000000000
+      internalID: 6615609825344968182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_15
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 827
+        width: 578
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01dbae93732996a0800000000000000
+      internalID: -6442078812486512374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_16
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 827
+        width: 513
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7b5a5b6d86728e0800000000000000
+      internalID: -1718289461438728253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_17
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 827
+        width: 552
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4776b19aa62de600800000000000000
+      internalID: 499097647738943309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_18
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 919
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b5a29d0a8a76360800000000000000
+      internalID: 7162879141147728768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_19
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 945
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99164ff54be2a3400800000000000000
+      internalID: 304607277039772057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_20
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 896
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21911237488648d0800000000000000
+      internalID: -2862450673783303893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_21
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 687
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa64ce7d6d4edaeb0800000000000000
+      internalID: -4706854424135579990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_22
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 687
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757bce95653101dd0800000000000000
+      internalID: -2517490930103306409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_23
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 686
+        width: 125
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17718f2c726c84fa0800000000000000
+      internalID: -5816181044671932559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_24
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 687
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e258ace77bdc630800000000000000
+      internalID: 3949014203465281049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_25
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 687
+        width: 155
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cde0a4a5faa2d2a0800000000000000
+      internalID: -6714116122450268730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_26
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 686
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67829f6174dfecc0800000000000000
+      internalID: -3679488786870139030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_27
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 687
+        width: 95
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdda6d7e66d31f3e0800000000000000
+      internalID: -2021767245527077413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_28
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 687
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06551010135ac0c0800000000000000
+      internalID: -4554736744677419509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_29
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 686
+        width: 142
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a640bf46fd638c0800000000000000
+      internalID: -4019779992580494835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_30
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 671
+        width: 31
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f02e40ffaa9b170800000000000000
+      internalID: 8194769009252634479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_31
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 686
+        width: 103
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e84ec56e9c87bfe0800000000000000
+      internalID: -1173314565965985561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_32
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 686
+        width: 141
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1148e5a8030b8720800000000000000
+      internalID: 2849374524920054044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_33
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 671
+        width: 31
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74414661a4b1fa950800000000000000
+      internalID: 6462413995317138503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_34
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 63
+        width: 617
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab97ca58e6259f730800000000000000
+      internalID: 4033345575929543098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_35
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 726
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c682743f902baa560800000000000000
+      internalID: 7325863499677509740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_36
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 731
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4863f6c523e0f5320800000000000000
+      internalID: 2548771523576936068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2816
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366134f0224fb60c0800000000000000
+      internalID: -4581299768797227421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_38
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 63
+        width: 647
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddb1a2b15a93d540800000000000000
+      internalID: 5031534884382948816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_39
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 63
+        width: 629
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5397443cf5b684f20800000000000000
+      internalID: 3407091177147889973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_01_attack2_40
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 63
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5ce8dc6517f5f40800000000000000
+      internalID: 5719414669413631434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tower_01_attack2_0: -2698274753737222567
+      tower_01_attack2_1: 4723576934496091224
+      tower_01_attack2_10: -9222388379506454817
+      tower_01_attack2_11: 3903521983960855242
+      tower_01_attack2_12: 3501318579971836862
+      tower_01_attack2_13: -5624619421860222071
+      tower_01_attack2_14: 6615609825344968182
+      tower_01_attack2_15: -6442078812486512374
+      tower_01_attack2_16: -1718289461438728253
+      tower_01_attack2_17: 499097647738943309
+      tower_01_attack2_18: 7162879141147728768
+      tower_01_attack2_19: 304607277039772057
+      tower_01_attack2_2: 166776253383392318
+      tower_01_attack2_20: -2862450673783303893
+      tower_01_attack2_21: -4706854424135579990
+      tower_01_attack2_22: -2517490930103306409
+      tower_01_attack2_23: -5816181044671932559
+      tower_01_attack2_24: 3949014203465281049
+      tower_01_attack2_25: -6714116122450268730
+      tower_01_attack2_26: -3679488786870139030
+      tower_01_attack2_27: -2021767245527077413
+      tower_01_attack2_28: -4554736744677419509
+      tower_01_attack2_29: -4019779992580494835
+      tower_01_attack2_3: -3527137913794908074
+      tower_01_attack2_30: 8194769009252634479
+      tower_01_attack2_31: -1173314565965985561
+      tower_01_attack2_32: 2849374524920054044
+      tower_01_attack2_33: 6462413995317138503
+      tower_01_attack2_34: 4033345575929543098
+      tower_01_attack2_35: 7325863499677509740
+      tower_01_attack2_36: 2548771523576936068
+      tower_01_attack2_37: -4581299768797227421
+      tower_01_attack2_38: 5031534884382948816
+      tower_01_attack2_39: 3407091177147889973
+      tower_01_attack2_4: -7466912026208749947
+      tower_01_attack2_40: 5719414669413631434
+      tower_01_attack2_5: 8557856473544434469
+      tower_01_attack2_6: -1504522467658873717
+      tower_01_attack2_7: 7120009298331269817
+      tower_01_attack2_8: 8986235159388632597
+      tower_01_attack2_9: -4593735980135468727
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
