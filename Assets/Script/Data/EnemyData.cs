@@ -3,10 +3,10 @@
 [System.Serializable]
 public class EnemyData : GameDataBase
 {
-    float MaxHP;
-    float MoveSpeed;
-    int Defence;
-    int ReawrdGold;
-    int PenaltyLife;
-    string MoveType;
+    public float MaxHP;
+    public float MoveSpeed;
+    public int Defence;
+    public int ReawrdGold;
+    public int PenaltyLife;
+    public string MoveType;
 }

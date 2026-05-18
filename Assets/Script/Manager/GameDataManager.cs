@@ -46,8 +46,21 @@ public class GameDataManager : MonoBehaviour
 
             if (wrapper != null && wrapper.items != null)
             {
-                Debug.Log($"{typeof(T).Name} 데이터를 {wrapper.items.Count}개 로드했습니다.");
-                return wrapper.items.ToDictionary(item => item.Id);
+                // 데이터 검증 및 null 제거를 안전하게 처리
+                var validItems = wrapper.items
+                    .Where(item => item != null && !string.IsNullOrEmpty(item.Id))
+                    .ToList();
+
+                // 데이터가 누락되었는지 확인 로그 출력
+                if (validItems.Count != wrapper.items.Count)
+                {
+                    Debug.LogWarning($"[경고] {typeof(T).Name} 데이터 중 일부가 null이거나 Id가 비어있어 제외되었습니다. (원본: {wrapper.items.Count}개 -> 정제 후: {validItems.Count}개)");
+                }
+
+                Debug.Log($"{typeof(T).Name} 데이터를 {validItems.Count}개 로드했습니다.");
+
+                // 안전해진 리스트로 Dictionary 생성
+                return validItems.ToDictionary(item => item.Id);
             }
         }
         catch (Exception ex)

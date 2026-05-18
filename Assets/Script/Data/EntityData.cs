@@ -3,8 +3,8 @@
 [System.Serializable]
 public class EntityData : GameDataBase
 {
-    string Name;
-    string Description;
-    string EntityType;
-    string IconPath;
+    public string Name;
+    public string Description;
+    public string EntityType;
+    public string IconPath;
 }
