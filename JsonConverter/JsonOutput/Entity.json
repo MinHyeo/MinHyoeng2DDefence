@@ -1,0 +1,79 @@
+[
+  {
+    "Id": "tower_01",
+    "Name": "창 원시인",
+    "Description": "창을 이용해 적을 찌르는 원시인. 날아다니는 유닛을 공격할 수 없습니다.",
+    "EntityType": "Tower",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "tower_02",
+    "Name": "도끼 원시인",
+    "Description": "도끼를 이용해 적을 공격하는 원시인. 날아다니는 유닛을 공격할 수 없습니다.",
+    "EntityType": "Tower",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "tower_03",
+    "Name": "돌 원시인",
+    "Description": null,
+    "EntityType": "Tower",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "tower_04",
+    "Name": "화살 원시인",
+    "Description": null,
+    "EntityType": "Tower",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "tower_05",
+    "Name": "독침 원시인",
+    "Description": null,
+    "EntityType": "Tower",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "tower_06",
+    "Name": "밧줄 원시인",
+    "Description": null,
+    "EntityType": "Tower",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "enemy_01",
+    "Name": "닭",
+    "Description": "기본 적",
+    "EntityType": "Enemy",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "enemy_02",
+    "Name": "돼지",
+    "Description": "체력이 많은 적 ",
+    "EntityType": "Enemy",
+    "IconPath": "Assets/Sprite/Icon/Pig.png"
+  },
+  {
+    "Id": "enemy_03",
+    "Name": "케찰코아틀루스",
+    "Description": "하늘을 날아다니는 몬스터. 특정 기물들만 공격을 할 수 있습니다.",
+    "EntityType": "Enemy",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "enemy_04",
+    "Name": "검치호",
+    "Description": null,
+    "EntityType": "Enemy",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  },
+  {
+    "Id": "enemy_05",
+    "Name": "매머드",
+    "Description": null,
+    "EntityType": "Enemy",
+    "IconPath": "Assets/Sprite/Icon/ChickenIcon.png"
+  }
+]

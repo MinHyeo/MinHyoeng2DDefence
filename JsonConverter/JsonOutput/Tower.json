@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "tower_01",
+    "Attack Damage": 10,
+    "Attack Range": 5,
+    "Attack Speed": 3,
+    "Projectile Speed": 0,
+    "Move Type": "Ground",
+    "Build Cost": 50,
+    "Sell Price": 25,
+    "Upgrade Id": null,
+    "Upgrade Cost": 45
+  },
+  {
+    "Id": "tower_02",
+    "Attack Damage": 9,
+    "Attack Range": 7,
+    "Attack Speed": 5,
+    "Projectile Speed": 10,
+    "Move Type": "Ground, Sky",
+    "Build Cost": 75,
+    "Sell Price": 50,
+    "Upgrade Id": null,
+    "Upgrade Cost": 60
+  }
+]

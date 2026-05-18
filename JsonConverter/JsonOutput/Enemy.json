@@ -1,0 +1,47 @@
+[
+  {
+    "Id": "enemy_01",
+    "MaxHp": 50,
+    "Move Speed": 2.5,
+    "Defense": 5,
+    "Reward Gold": 50,
+    "Penalty Life": 1,
+    "Move Type": "Ground"
+  },
+  {
+    "Id": "enemy_02",
+    "MaxHp": 100,
+    "Move Speed": 2,
+    "Defense": 10,
+    "Reward Gold": 75,
+    "Penalty Life": 1,
+    "Move Type": "Ground"
+  },
+  {
+    "Id": "enemy_03",
+    "MaxHp": 75,
+    "Move Speed": 2.5,
+    "Defense": 7,
+    "Reward Gold": 75,
+    "Penalty Life": 1,
+    "Move Type": "Sky"
+  },
+  {
+    "Id": "enemy_04",
+    "MaxHp": 75,
+    "Move Speed": 3,
+    "Defense": 7,
+    "Reward Gold": 75,
+    "Penalty Life": 1,
+    "Move Type": "Ground"
+  },
+  {
+    "Id": "enemy_05",
+    "MaxHp": 300,
+    "Move Speed": 1.5,
+    "Defense": 20,
+    "Reward Gold": 150,
+    "Penalty Life": 2,
+    "Move Type": "Ground"
+  }
+]
