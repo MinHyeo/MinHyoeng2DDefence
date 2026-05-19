@@ -1,0 +1,41 @@
+﻿using UnityEngine;
+
+[System.Serializable]
+public class GameDataBase
+{
+    public string Id;
+}
+
+[System.Serializable]
+public class EntityData : GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string EntityType;
+    public string IconPath;
+}
+
+[System.Serializable]
+public class TowerData : GameDataBase
+{
+    public int AttackDamage;
+    public float AttackRange;
+    public float AttackSpeed;
+    public float ProjectileSpeed;
+    public string MoveType;
+    public int BuildPrice;
+    public int SellPrice;
+    public string UpgradeId;
+    public int UpgradePrice;
+}
+
+[System.Serializable]
+public class EnemyData : GameDataBase
+{
+    public float MaxHP;
+    public float MoveSpeed;
+    public int Defence;
+    public int ReawrdGold;
+    public int PenaltyLife;
+    public string MoveType;
+}
