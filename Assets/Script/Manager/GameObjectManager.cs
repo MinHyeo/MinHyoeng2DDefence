@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameObjectManager : MonoBehaviour
 {
     private Dictionary<int, GameObject> _createdGameObjectContainer = new Dictionary<int, GameObject>();
-    //private Dictionary<int, FieldObject> _fieldObjectContainer = new Dictionary<int, FieldObject>();
 
     public static GameObjectManager Instance;
 
@@ -14,6 +13,36 @@ public class GameObjectManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void CreateEnemyOjbect(string enemyDataId, Transform spawnPos)
+    {
+        var enemyData = GameDataManager.Instance.GetEnemyData(enemyDataId);
+        if(enemyData == null)
+        {
+            Debug.LogError("enemyData 로드 실패");
+            return;
+        }
+
+        ResourceManager.Instance.Instantiate(enemyData.PrefabPath, this.transform, (createdObject) =>
+        {
+            createdObject.transform.position = spawnPos.position;
+            AddEnemyObjectOnCreated(createdObject, enemyDataId);
+        });
+    }
+
+    public void AddEnemyObjectOnCreated(GameObject createdObject, string enemyDataId) 
+    {
+        _objectInstanceKeyGenerator++;
+
+        var generatedInstanceId = _objectInstanceKeyGenerator;
+        var enemyComponent = createdObject.GetComponent<Enemy>();
+
+        if (enemyComponent != null)
+        {
+            _createdGameObjectContainer.Add(generatedInstanceId, enemyComponent.gameObject);
+            enemyComponent.InitEnemyInfoOnCreated(generatedInstanceId);
+        }
     }
 
     //public void CreateFieldObject(string fieldObjectDataId, Transform spawnSpot)

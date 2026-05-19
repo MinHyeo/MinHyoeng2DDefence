@@ -11,6 +11,8 @@ public class GameDataManager : MonoBehaviour
     private Dictionary<string, EntityData> _entityDataList = new Dictionary<string, EntityData>();
     private Dictionary<string, TowerData> _towerDataList = new Dictionary<string, TowerData>();
     private Dictionary<string, EnemyData> _enemyDataList = new Dictionary<string, EnemyData>();
+    private Dictionary<string, StageData> _stageDataList = new Dictionary<string, StageData>();
+    private Dictionary<string, WaveData> _waveDataList = new Dictionary<string, WaveData>();
 
     private void Awake()
     {
@@ -29,6 +31,8 @@ public class GameDataManager : MonoBehaviour
         LoadEntityData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Entity.json");
         LoadTowerData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Tower.json");
         LoadEnemyData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Enemy.json");
+        LoadStageData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Stage.json");
+        LoadWaveData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Wave.json");
     }
 
     private Dictionary<string, T> LoadData<T>(string jsonPath) where T : GameDataBase
@@ -80,9 +84,20 @@ public class GameDataManager : MonoBehaviour
     {
         _towerDataList = LoadData<TowerData>(jsonPath);
     }
+
     private void LoadEnemyData(string jsonPath)
     {
         _enemyDataList = LoadData<EnemyData>(jsonPath);
+    }
+
+    private void LoadStageData(string jsonPath)
+    {
+        _stageDataList = LoadData<StageData>(jsonPath);
+    }
+
+    private void LoadWaveData(string jsonPath)
+    {
+        _waveDataList = LoadData<WaveData>(jsonPath);
     }
 
     public EntityData GetEntityData(string id)
@@ -107,6 +122,26 @@ public class GameDataManager : MonoBehaviour
             return null;
 
         return _enemyDataList.TryGetValue(id, out var data) ? data : null;
+    }
+
+    public StageData GetStageData(string id)
+    {
+        if (_stageDataList == null || string.IsNullOrEmpty(id))
+            return null;
+
+        return _stageDataList.TryGetValue(id, out var data) ? data : null;
+    }
+
+    public WaveData GetWaveData(string id)
+    {
+        if (_waveDataList == null || string.IsNullOrEmpty(id))
+        {
+            Debug.Log("ddddd");
+            return null;
+        }
+            
+
+        return _waveDataList.TryGetValue(id, out var data) ? data : null;
     }
 
     public List<string> GetAllTowerIds()

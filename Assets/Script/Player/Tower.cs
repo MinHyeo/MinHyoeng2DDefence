@@ -26,11 +26,7 @@ public class Tower : MonoBehaviour
 
     private void Start()
     {
-        //string _tempId = "tower_01";
         _towerData = GameDataManager.Instance.GetTowerData(_tempId);
-
-        Debug.Log(_towerData.Id);
-        Debug.Log(_towerData.AttackRange);
     }
 
     private void Update()

@@ -6,7 +6,8 @@
     "Defense": 5,
     "RewardGold": 50,
     "PenaltyLife": 1,
-    "MoveType": "Ground"
+    "MoveType": "Ground",
+    "PrefabPath": "Prefab/Enemy/enemy_01"
   },
   {
     "Id": "enemy_02",
@@ -15,7 +16,8 @@
     "Defense": 10,
     "RewardGold": 75,
     "PenaltyLife": 1,
-    "MoveType": "Ground"
+    "MoveType": "Ground",
+    "PrefabPath": "Prefab/Enemy/enemy_02"
   },
   {
     "Id": "enemy_03",
@@ -24,7 +26,8 @@
     "Defense": 7,
     "RewardGold": 75,
     "PenaltyLife": 1,
-    "MoveType": "Sky"
+    "MoveType": "Sky",
+    "PrefabPath": "Prefab/Enemy/enemy_03"
   },
   {
     "Id": "enemy_04",
@@ -33,7 +36,8 @@
     "Defense": 7,
     "RewardGold": 75,
     "PenaltyLife": 1,
-    "MoveType": "Ground"
+    "MoveType": "Ground",
+    "PrefabPath": "Prefab/Enemy/enemy_04"
   },
   {
     "Id": "enemy_05",
@@ -42,6 +46,7 @@
     "Defense": 20,
     "RewardGold": 150,
     "PenaltyLife": 2,
-    "MoveType": "Ground"
+    "MoveType": "Ground",
+    "PrefabPath": "Prefab/Enemy/enemy_05"
   }
 ]

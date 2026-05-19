@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-
+﻿using System.Collections.Generic;
 [System.Serializable]
 public class GameDataBase
 {
@@ -38,4 +37,23 @@ public class EnemyData : GameDataBase
     public int ReawrdGold;
     public int PenaltyLife;
     public string MoveType;
+    public string PrefabPath;
 }
+
+[System.Serializable]
+public class StageData : GameDataBase
+{
+    public int MaxLife;
+    public string WaveId;
+}
+
+[System.Serializable]
+public class WaveData : GameDataBase
+{
+    public int WaveGroup;
+    public string EnemyId;
+    public int Count;
+    public float Interval;
+    public float PreDelay;
+}
+
