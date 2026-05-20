@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 7f6d21ff44dc98044a275f19b182b878
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8701739180875849279
+    second: tower_02_idle_0
+  - first:
+      213: 7851943437305741246
+    second: tower_02_idle_1
+  - first:
+      213: -448534779646479838
+    second: tower_02_idle_2
+  - first:
+      213: 7419293583033905383
+    second: tower_02_idle_3
+  - first:
+      213: -7153907384552903473
+    second: tower_02_idle_4
+  - first:
+      213: 5320949895151820291
+    second: tower_02_idle_5
+  - first:
+      213: 7698945475336944674
+    second: tower_02_idle_6
+  - first:
+      213: 1510501555874024144
+    second: tower_02_idle_7
+  - first:
+      213: -1873813041268770028
+    second: tower_02_idle_8
+  - first:
+      213: -6140730515452649005
+    second: tower_02_idle_9
+  - first:
+      213: 8871658128950517942
+    second: tower_02_idle_10
+  - first:
+      213: 2879267726384500447
+    second: tower_02_idle_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tower_02_idle_0
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 768
+        width: 354
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1ebcb91563d3780800000000000000
+      internalID: -8701739180875849279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_1
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 768
+        width: 353
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf711174f4b7fc60800000000000000
+      internalID: 7851943437305741246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 768
+        width: 355
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22273cd8efb76c9f0800000000000000
+      internalID: -448534779646479838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 768
+        width: 355
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e032156430a6f660800000000000000
+      internalID: 7419293583033905383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 768
+        width: 357
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc2ea3032738bc90800000000000000
+      internalID: -7153907384552903473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 768
+        width: 354
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e1d20fcbfc7d940800000000000000
+      internalID: 5320949895151820291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2814
+        height: 701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c3f8a7e1628da60800000000000000
+      internalID: 7698945475336944674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_7
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 137
+        width: 358
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dacb8e792166f410800000000000000
+      internalID: 1510501555874024144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_8
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 137
+        width: 359
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b3ea387f0eef5e0800000000000000
+      internalID: -1873813041268770028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 137
+        width: 359
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d12b05912eb7caa0800000000000000
+      internalID: -6140730515452649005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 137
+        width: 358
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b06dc070167e1b70800000000000000
+      internalID: 8871658128950517942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_02_idle_11
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 137
+        width: 358
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde056cfdb635f720800000000000000
+      internalID: 2879267726384500447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tower_02_idle_0: -8701739180875849279
+      tower_02_idle_1: 7851943437305741246
+      tower_02_idle_10: 8871658128950517942
+      tower_02_idle_11: 2879267726384500447
+      tower_02_idle_2: -448534779646479838
+      tower_02_idle_3: 7419293583033905383
+      tower_02_idle_4: -7153907384552903473
+      tower_02_idle_5: 5320949895151820291
+      tower_02_idle_6: 7698945475336944674
+      tower_02_idle_7: 1510501555874024144
+      tower_02_idle_8: -1873813041268770028
+      tower_02_idle_9: -6140730515452649005
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
