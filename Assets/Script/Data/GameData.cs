@@ -26,6 +26,7 @@ public class TowerData : GameDataBase
     public int SellPrice;
     public string UpgradeId;
     public int UpgradePrice;
+    public string PrefabPath;
 }
 
 [System.Serializable]

@@ -15,10 +15,64 @@ public class GameObjectManager : MonoBehaviour
         Instance = this;
     }
 
-    public void CreateEnemyOjbect(string enemyDataId, Transform spawnPos)
+    public void CreateTowerOjbect(string towerDataId, Vector3 spawnPos)
+    {
+        var towerData = GameDataManager.Instance.GetTowerData(towerDataId);
+        if (towerData == null)
+        {
+            Debug.LogError("towerData 로드 실패");
+            return;
+        }
+
+        ResourceManager.Instance.Instantiate(towerData.PrefabPath, this.transform, (createdObject) =>
+        {
+            createdObject.transform.position = spawnPos;
+            AddEnemyObjectOnCreated(createdObject, towerDataId);
+        });
+    }
+
+    public void AddTowerObjectOnCreated(GameObject createdObject, string towerDataId)
+    {
+        _objectInstanceKeyGenerator++;
+
+        var generatedInstanceId = _objectInstanceKeyGenerator;
+        var towerComponent = createdObject.GetComponent<Tower>();
+
+        if (towerComponent != null)
+        {
+            _createdGameObjectContainer.Add(generatedInstanceId, towerComponent.gameObject);
+            //towerComponent.InitEnemyInfoOnCreated(generatedInstanceId);
+        }
+    }
+
+    public void RequestDestroyTowerObject(int instanceId)
+    {
+        var towerObjectComponent = GetTowerObjectByInstanceId(instanceId);
+        if (towerObjectComponent == null)
+        {
+            return;
+        }
+
+        // 요청된 필드 오브젝트를 제거함
+        _createdGameObjectContainer.Remove(instanceId);
+        Destroy(towerObjectComponent.gameObject);
+    }
+
+    public GameObject GetTowerObjectByInstanceId(int towerObjectInstanceId)
+    {
+        if (_createdGameObjectContainer.ContainsKey(towerObjectInstanceId) == false)
+        {
+            Debug.LogError($"{towerObjectInstanceId} 찾으려는 필드 오브젝트가 유효하지 않습니다");
+            return null;
+        }
+
+        return _createdGameObjectContainer[towerObjectInstanceId];
+    }
+
+    public void CreateEnemyOjbect(string enemyDataId, Vector3 spawnPos)
     {
         var enemyData = GameDataManager.Instance.GetEnemyData(enemyDataId);
-        if(enemyData == null)
+        if (enemyData == null)
         {
             Debug.LogError("enemyData 로드 실패");
             return;
@@ -26,12 +80,12 @@ public class GameObjectManager : MonoBehaviour
 
         ResourceManager.Instance.Instantiate(enemyData.PrefabPath, this.transform, (createdObject) =>
         {
-            createdObject.transform.position = spawnPos.position;
+            createdObject.transform.position = spawnPos;
             AddEnemyObjectOnCreated(createdObject, enemyDataId);
         });
     }
 
-    public void AddEnemyObjectOnCreated(GameObject createdObject, string enemyDataId) 
+    public void AddEnemyObjectOnCreated(GameObject createdObject, string enemyDataId)
     {
         _objectInstanceKeyGenerator++;
 
@@ -43,6 +97,30 @@ public class GameObjectManager : MonoBehaviour
             _createdGameObjectContainer.Add(generatedInstanceId, enemyComponent.gameObject);
             enemyComponent.InitEnemyInfoOnCreated(generatedInstanceId);
         }
+    }
+
+    public void RequestDestroyEnemyObject(int instanceId)
+    {
+        var enemyObjectComponent = GetEnemyObjectByInstanceId(instanceId);
+        if (enemyObjectComponent == null)
+        {
+            return;
+        }
+
+        // 요청된 필드 오브젝트를 제거함
+        _createdGameObjectContainer.Remove(instanceId);
+        Destroy(enemyObjectComponent.gameObject);
+    }
+
+    public GameObject GetEnemyObjectByInstanceId(int enemyObjectInstanceId)
+    {
+        if (_createdGameObjectContainer.ContainsKey(enemyObjectInstanceId) == false)
+        {
+            Debug.LogError($"{enemyObjectInstanceId} 찾으려는 필드 오브젝트가 유효하지 않습니다");
+            return null;
+        }
+
+        return _createdGameObjectContainer[enemyObjectInstanceId];
     }
 
     //public void CreateFieldObject(string fieldObjectDataId, Transform spawnSpot)

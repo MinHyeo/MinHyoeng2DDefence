@@ -9,7 +9,8 @@
     "BuildPrice": 50,
     "SellPrice": 25,
     "UpgradeId": "ddd",
-    "UpgradePrice": 45
+    "UpgradePrice": 45,
+    "PrefabPath": "Prefab/Tower/tower_01"
   },
   {
     "Id": "tower_02",
@@ -21,6 +22,7 @@
     "BuildPrice": 75,
     "SellPrice": 50,
     "UpgradeId": "ddd",
-    "UpgradePrice": 60
+    "UpgradePrice": 60,
+    "PrefabPath": "Prefab/Tower/tower_02"
   }
 ]
