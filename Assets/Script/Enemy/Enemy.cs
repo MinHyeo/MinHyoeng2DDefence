@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         _enemyData = GameDataManager.Instance.GetEnemyData(_tempId);
-        _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex++];
+        _waypoint = WaypointManager.Instance.GetWaypoints()[++_waypointIndex];
     }
 
     private void FixedUpdate()
@@ -43,7 +43,14 @@ public class Enemy : MonoBehaviour
         float distance = Vector3.Distance(_waypoint, transform.position);
 
         if (distance < 0.05f)
-            _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex++];
+        {
+            if (WaypointManager.Instance.GetWaypoints().Count <= ++_waypointIndex)
+            {
+                GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
+            }
+            _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
+        }
+            
     }
 
     public void OnDamaged()

@@ -46,6 +46,7 @@ public class WaveManager : MonoBehaviour
 
     private void SpawnEnemy(string enemyId) 
     {
-        GameObjectManager.Instance.CreateEnemyOjbect(enemyId, transform);
+        Vector3 spawnTransform = WaypointManager.Instance.GetWaypoints()[0];
+        GameObjectManager.Instance.CreateEnemyOjbect(enemyId, spawnTransform);
     }
 }
