@@ -17,7 +17,7 @@ public class EntityData : GameDataBase
 [System.Serializable]
 public class TowerData : GameDataBase
 {
-    public int AttackDamage;
+    public float AttackDamage;
     public float AttackRange;
     public float AttackSpeed;
     public float ProjectileSpeed;
@@ -32,9 +32,9 @@ public class TowerData : GameDataBase
 [System.Serializable]
 public class EnemyData : GameDataBase
 {
-    public float MaxHP;
+    public float MaxHp;
     public float MoveSpeed;
-    public int Defence;
+    public float Defence;
     public int ReawrdGold;
     public int PenaltyLife;
     public string MoveType;

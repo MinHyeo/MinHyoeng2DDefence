@@ -136,10 +136,8 @@ public class GameDataManager : MonoBehaviour
     {
         if (_waveDataList == null || string.IsNullOrEmpty(id))
         {
-            Debug.Log("ddddd");
             return null;
         }
-            
 
         return _waveDataList.TryGetValue(id, out var data) ? data : null;
     }

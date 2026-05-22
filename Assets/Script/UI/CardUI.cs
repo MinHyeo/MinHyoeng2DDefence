@@ -28,6 +28,7 @@ public class CardUI : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPointe
             GameObject towerObject = Instantiate(towerPrefab);
             towerObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z));
             towerObject.transform.position = new Vector3(towerObject.transform.position.x, towerObject.transform.position.y, 0);
+            towerObject.GetComponent<TowerBatchObject>().InitBatchObject(_towerId, HandlePlacementResult);
 
             eventData.pointerPress = towerObject;
             eventData.pointerDrag = towerObject;
@@ -55,5 +56,17 @@ public class CardUI : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPointe
                 return;
             _towerIconImage.sprite = sprite;
         });
+    }
+
+    private void HandlePlacementResult(bool isSurccess)
+    {
+        if (isSurccess)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
     }
 }

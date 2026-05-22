@@ -1,9 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class TowerBatchObject : MonoBehaviour, IDragHandler, IPointerUpHandler
 {
-    [SerializeField] private string towerId = "tower_01";
+    private string _towerId;
+    private Action<bool> _onPlacementResult;
+
+    public void InitBatchObject(string towerId, Action<bool> callback)
+    {
+        _towerId = towerId;
+        _onPlacementResult = callback;
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -16,8 +24,15 @@ public class TowerBatchObject : MonoBehaviour, IDragHandler, IPointerUpHandler
         Debug.Log("배치 시도");
         if (TowerManager.Instance.CanPlaceTower(transform.position))
         {
-            TowerManager.Instance.SpawnTower(towerId, transform.position);
+            TowerManager.Instance.SpawnTower(_towerId, transform.position);
             gameObject.SetActive(false);
+
+            _onPlacementResult?.Invoke(true);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+            _onPlacementResult?.Invoke(false);
         }
     }
 }

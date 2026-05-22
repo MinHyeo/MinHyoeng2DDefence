@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public enum UIRootType
+public enum UIRootType : byte
 {
     None = 0,
     BackgroundUI,
@@ -10,7 +10,7 @@ public enum UIRootType
     VeryFrontUI
 }
 
-public enum UIType
+public enum UIType : byte
 {
     LoadingUI,
     MainUI,
