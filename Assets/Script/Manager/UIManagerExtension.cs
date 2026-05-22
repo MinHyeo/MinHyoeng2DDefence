@@ -30,14 +30,14 @@ public static class UIManagerExtension
 
         // 신규UI추가 2) Resources.Load를 할 경로를 직접 명시한다
         // 해당 경로는 프로젝트창에서 Resources/Prefabs/UI폴더 내에 있는 RootType 폴더명과 UIType 프리팹 이름과 동일해야 한다! (ex. ContentUI/DNMyProfilePopup)
-        path = $"Prefabs/UI/{uiRootType}/{uiType}";
+        path = $"Prefab/UI/{uiRootType}/{uiType}";
         return path;
     }
 
     public static void ShowStartupUIOnGameStart(this UIManager uiManager)
     {
         //uiManager.OpenLoadingUI();
-        //uiManager.OpenUI(UIRootType.MainUI, UIType.MainUI);
+        uiManager.OpenUI(UIRootType.MainUI, UIType.MainUI);
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
     }

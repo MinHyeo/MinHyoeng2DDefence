@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.AddressableAssets;
-using UnityEditor.AddressableAssets.Build;
 
 public class ResourceManager : MonoBehaviour
 {
