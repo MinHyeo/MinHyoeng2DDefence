@@ -16,7 +16,8 @@ public class Tower : MonoBehaviour
 
     public string _tempId;
     private TowerData _towerData;
-    private bool _isAttacking = false;
+    private float _attackCoolTime;
+    private float _lastAttackTime = 0f;
 
     private void Awake()
     {
@@ -24,16 +25,14 @@ public class Tower : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         _towerData = GameDataManager.Instance.GetTowerData(_tempId);
+        _attackCoolTime = 1f / _towerData.AttackSpeed;
     }
 
     private void Update()
     {
-        if (_isAttacking)
-            return;
-
         CheckEnemyInAttackRanage();
     }
 
@@ -43,14 +42,17 @@ public class Tower : MonoBehaviour
         if (rayHit)
         {
             Debug.Log("공격 대상 찾음");
-            OnAttack(rayHit.transform);
+            if(Time.time >= _lastAttackTime + _attackCoolTime)
+            {
+                Debug.Log("공격!!");
+                OnAttack(rayHit.transform);
+                _lastAttackTime = Time.time;
+            } 
         }
     }
 
     private void OnAttack(Transform target)
     {
-        _isAttacking = true;
-
         _spriteRenderer.flipX = IsEnemyOnLeft(target);
 
         _animator.SetTrigger("IsAttack");
@@ -70,7 +72,7 @@ public class Tower : MonoBehaviour
             _animator.SetInteger("AttackType", -1);
         }
 
-        target.gameObject.GetComponent<Enemy>().OnDamaged();
+        target.gameObject.GetComponent<Enemy>().OnDamaged(_towerData.AttackDamage);
     }
 
     private bool IsEnemyOnLeft(Transform target)
@@ -85,11 +87,6 @@ public class Tower : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         return angle;
-    }
-
-    public void EndAttack()
-    {
-        _isAttacking = false;
     }
 
     private void OnDrawGizmos()

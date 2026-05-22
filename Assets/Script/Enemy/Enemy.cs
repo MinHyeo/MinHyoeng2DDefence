@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     private EnemyData _enemyData;
     private int _waypointIndex = 0;
     private Vector3 _waypoint = Vector3.zero;
+    private float _currentHp;
 
     public string _tempId = "enemy_01";
 
@@ -17,10 +18,11 @@ public class Enemy : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         _enemyData = GameDataManager.Instance.GetEnemyData(_tempId);
         _waypoint = WaypointManager.Instance.GetWaypoints()[++_waypointIndex];
+        _currentHp = _enemyData.MaxHp;
     }
 
     private void FixedUpdate()
@@ -49,12 +51,17 @@ public class Enemy : MonoBehaviour
                 GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
             }
             _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
-        }
-            
+        }    
     }
 
-    public void OnDamaged()
+    public void OnDamaged(float damaged)
     {
+        _currentHp -= damaged;
+        if(_currentHp <= 0)
+        {
+            GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
+        }
+
         _spriteRenderer.color = Color.red;
 
         Invoke("ChangeColor", 1f);
