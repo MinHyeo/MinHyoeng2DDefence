@@ -45,6 +45,7 @@ public class EnemyData : GameDataBase
 public class StageData : GameDataBase
 {
     public int MaxLife;
+    public int StartMeatCount;
     public string WaveId;
 }
 

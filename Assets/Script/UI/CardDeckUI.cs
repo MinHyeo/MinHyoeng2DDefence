@@ -8,6 +8,7 @@ public class CardDeckUI : MonoBehaviour
 
     private Dictionary<int, GameObject> _cardList = new Dictionary<int, GameObject>();
     private int _cardInstanceId = 0;
+    private int _cardDrawPrice = 50;
 
     private void OnEnable()
     {
@@ -16,6 +17,9 @@ public class CardDeckUI : MonoBehaviour
 
     private void DrawCard()
     {
+        if (MeatManager.Instance.GetMeatCount() < _cardDrawPrice)
+            return;
+
         string path = $"Prefab/UI/MainUI/CardUI";
         GameObject loadedObj = (GameObject)Resources.Load(path);
         GameObject gObj = Instantiate(loadedObj, _cardListTransform);
@@ -25,8 +29,7 @@ public class CardDeckUI : MonoBehaviour
         string randomTowerId = GetRandomTowerId();
         gObj.GetComponent<CardUI>().InitCardUI(_cardInstanceId, randomTowerId);
 
-        //float width = _cardListTransform.sizeDelta.x;
-        //float WidthSize = width / _cardList.Count;
+        MeatManager.Instance.DecreaseMeatCount(_cardDrawPrice);
     }
 
     private string GetRandomTowerId()
