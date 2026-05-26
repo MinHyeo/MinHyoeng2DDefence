@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
             if (WaypointManager.Instance.GetWaypoints().Count <= ++_waypointIndex)
             {
                 GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
-                WaveManager.Instance.DecreaseLife();
+                LifeManager.Instance.DecreaseLifeCount();
                 return;
             }
             _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
