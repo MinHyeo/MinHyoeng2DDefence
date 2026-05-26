@@ -7,7 +7,7 @@ public class LifeManager : MonoBehaviour
 
     private int _lifeCount;
 
-    private event Action<int> _updateLifeCount;
+    private event Action<int> _onUpdateLifeCount;
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class LifeManager : MonoBehaviour
 
     public void SubscribeUpdateLifeCount(Action<int> callback)
     {
-        _updateLifeCount += callback;
+        _onUpdateLifeCount += callback;
     }
 
     public void SetLifeCount(int startLifeCount)
@@ -33,7 +33,7 @@ public class LifeManager : MonoBehaviour
 
     private void UpdateLifeCountIcon()
     {
-        _updateLifeCount?.Invoke(_lifeCount);
+        _onUpdateLifeCount?.Invoke(_lifeCount);
     }
 
     public int GetLifeCount()

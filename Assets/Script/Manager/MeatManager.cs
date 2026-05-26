@@ -7,7 +7,7 @@ public class MeatManager : MonoBehaviour
 
     private int _meatCount;
 
-    private event Action<int> _updateMeatCount;
+    private event Action<int> _onUpdateMeatCount;
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class MeatManager : MonoBehaviour
 
     public void SubscribeUpdateMeatCount(Action<int> callback)
     {
-        _updateMeatCount += callback;
+        _onUpdateMeatCount += callback;
     }
 
     public void SetStartMeatCount(int startMeatCount)
@@ -33,7 +33,7 @@ public class MeatManager : MonoBehaviour
     
     private void UpdateMeatCountText()
     {
-        _updateMeatCount?.Invoke(_meatCount);
+        _onUpdateMeatCount?.Invoke(_meatCount);
     }
 
     public int GetMeatCount()
