@@ -48,7 +48,7 @@ public class CardUI : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPointe
 
     private void SetCardUI()
     {
-        EntityData towerData = GameDataManager.Instance.GetEntityData(_towerId);
+        var towerData = GameDataManager.Instance.GetEntityData(_towerId);
         _towerNameText.text = towerData.Name;
         ResourceManager.Instance.LoadSprite(towerData.IconPath, (sprite) =>
         {

@@ -25,6 +25,12 @@ public class MeatManager : MonoBehaviour
         UpdateMeatCountText();
     }
 
+    public void IncreaseMeatCount(int increaseCount)
+    {
+        _meatCount += increaseCount;
+        UpdateMeatCountText();
+    }
+
     public void DecreaseMeatCount(int decreaseCount)
     {
         _meatCount -= decreaseCount;

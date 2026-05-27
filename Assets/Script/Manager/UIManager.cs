@@ -94,6 +94,11 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public UIBase GetOpenedUI(UIRootType uiRootType, UIType uiType)
+    {
+        return GetCreatedUI(uiRootType, uiType);
+    }
+
     private UIBase GetCreatedUI(UIRootType uiRootType, UIType uiType)
     {
         if (_createdUIDic.ContainsKey(uiType) == false)

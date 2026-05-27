@@ -35,7 +35,7 @@ public class EnemyData : GameDataBase
     public float MaxHp;
     public float MoveSpeed;
     public float Defence;
-    public int ReawrdGold;
+    public int RewardGold;
     public int PenaltyLife;
     public string MoveType;
     public string PrefabPath;

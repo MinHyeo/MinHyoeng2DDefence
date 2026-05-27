@@ -1,4 +1,4 @@
-﻿using Unity.VisualScripting;
+﻿using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -13,16 +13,11 @@ public class Enemy : MonoBehaviour
 
     public string _tempId = "enemy_01";
 
+    private event Action<float> _onHpChanged;
+
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    private void OnEnable()
-    {
-        _enemyData = GameDataManager.Instance.GetEnemyData(_tempId);
-        _waypoint = WaypointManager.Instance.GetWaypoints()[++_waypointIndex];
-        _currentHp = _enemyData.MaxHp;
     }
 
     private void FixedUpdate()
@@ -30,9 +25,20 @@ public class Enemy : MonoBehaviour
         OnMove();
     }
 
+    private void OnDisable()
+    {
+        UIManager.Instance.RemoveHudSlot(_instanceId);
+    }
+
     public void InitEnemyInfoOnCreated(int instanceId)
     {
         _instanceId = instanceId;
+
+        _enemyData = GameDataManager.Instance.GetEnemyData(_tempId);
+        _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
+        _currentHp = _enemyData.MaxHp;
+
+        UIManager.Instance.AddHudSlot(_instanceId, this.transform);
     }
 
     private void OnMove()
@@ -59,8 +65,10 @@ public class Enemy : MonoBehaviour
     public void OnDamaged(float damaged)
     {
         _currentHp -= damaged;
+        InvokeStatChangedEvnet();
         if(_currentHp <= 0)
         {
+            MeatManager.Instance.IncreaseMeatCount(_enemyData.RewardGold);
             GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
         }
 
@@ -72,5 +80,21 @@ public class Enemy : MonoBehaviour
     private void ChangeColor()
     {
         _spriteRenderer.color = Color.white;
+    }
+
+    public void BindOnStatChangedEvnet(Action<float> hpChangeCallback)
+    {
+        _onHpChanged += hpChangeCallback;
+    }
+
+    public void ResetStatChangedEvent()
+    {
+        _onHpChanged = null;
+    }
+
+    private void InvokeStatChangedEvnet()
+    {
+        float hp = _currentHp / _enemyData.MaxHp;
+        _onHpChanged?.Invoke(hp);
     }
 }
