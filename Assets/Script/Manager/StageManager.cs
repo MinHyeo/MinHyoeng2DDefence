@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Splines;
 using UnityEngine.Tilemaps;
 
 public class StageManager : MonoBehaviour
 {
     public static StageManager Instance;
 
+    [SerializeField] private List<GameObject> _stageTilemapList;
     [SerializeField] private GameObject _stage1TileMap;
     [SerializeField] private GameObject _stage2TileMap;
     [SerializeField] private GameObject _stage3TileMap;
@@ -32,12 +32,12 @@ public class StageManager : MonoBehaviour
         UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.MainUI);
 
         // TileMap 설정
-        _currentTilemap = _stage1TileMap.GetComponent<Tilemap>();
-        _stage1TileMap.SetActive(true);
+        _currentTilemap = _stageTilemapList[stageIndex].GetComponent<Tilemap>();
+        _currentTilemap.gameObject.SetActive(true);
         WaypointManager.Instance.SetWayPoint();
 
         // 스테이지 데이터 불러오기
-        string stageId = "stage_0" + stageIndex;
+        string stageId = "stage_0" + (stageIndex + 1);
         LoadStageData(stageId);
     }
     

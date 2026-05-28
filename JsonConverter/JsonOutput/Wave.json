@@ -26,10 +26,10 @@
   {
     "Id": "wave2_01",
     "WaveGroup": 1,
-    "EnemyId": "enemy_01",
+    "EnemyId": "enemy_02",
     "Count": 5,
-    "Interval": 0.25,
-    "PreDelay": 6
+    "Interval": 0.5,
+    "PreDelay": 0
   },
   {
     "Id": "wave2_02",
@@ -70,5 +70,53 @@
     "Count": 5,
     "Interval": 0.25,
     "PreDelay": 6
+  },
+  {
+    "Id": "wave4_01",
+    "WaveGroup": 1,
+    "EnemyId": null,
+    "Count": null,
+    "Interval": null,
+    "PreDelay": null
+  },
+  {
+    "Id": "wave4_02",
+    "WaveGroup": 2,
+    "EnemyId": null,
+    "Count": null,
+    "Interval": null,
+    "PreDelay": null
+  },
+  {
+    "Id": "wave4_03",
+    "WaveGroup": 3,
+    "EnemyId": null,
+    "Count": null,
+    "Interval": null,
+    "PreDelay": null
+  },
+  {
+    "Id": "wave5_01",
+    "WaveGroup": 1,
+    "EnemyId": null,
+    "Count": null,
+    "Interval": null,
+    "PreDelay": null
+  },
+  {
+    "Id": "wave5_02",
+    "WaveGroup": 2,
+    "EnemyId": null,
+    "Count": null,
+    "Interval": null,
+    "PreDelay": null
+  },
+  {
+    "Id": "wave5_03",
+    "WaveGroup": 3,
+    "EnemyId": null,
+    "Count": null,
+    "Interval": null,
+    "PreDelay": null
   }
 ]

@@ -57,8 +57,15 @@ public class UIButton : MonoBehaviour
         if(Button_Base == null) return;
 
         Button_Base.onClick.AddListener(new UnityEngine.Events.UnityAction(onClickCallback));
-
     }
+
+    // TODO : 이거 StgaeSelectUI에서 사용해야하는데 int 타입 action에 넣는 방법 찾아봐야함.
+    //public void BindOnClickButtonEvent(Action<int> onClickCallback, int index)
+    //{
+    //    if (Button_Base == null) return;
+    //
+    //    Button_Base.onClick.AddListener(new UnityEngine.Events.UnityAction<int>(onClickCallback));
+    //}
 
     public void UnBindOnClickButtonEvent(Action onClickCallback)
     {

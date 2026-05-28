@@ -16,5 +16,17 @@
     "MaxLife": 3,
     "StartMeatCount": 200,
     "WaveId": "wave3_01, wave3_02, wave3_03"
+  },
+  {
+    "Id": "stage_04",
+    "MaxLife": 3,
+    "StartMeatCount": 200,
+    "WaveId": "wave4_01, wave4_02, wave4_03"
+  },
+  {
+    "Id": "stage_05",
+    "MaxLife": 3,
+    "StartMeatCount": 200,
+    "WaveId": "wave5_01, wave5_02, wave5_03"
   }
 ]

@@ -958,6 +958,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8b694f357768147b91766a153aaacd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StageSelectUI
+  _stageButtonList:
+  - {fileID: 1247872678489015383}
+  - {fileID: 1032089461886859939}
+  - {fileID: 37996539455727136}
+  - {fileID: 2182417993468167864}
+  - {fileID: 263712021510836356}
   _stageButton: {fileID: 1247872678489015383}
   _stageButtonPrefab: {fileID: 0}
 --- !u!1 &8486855160160068441

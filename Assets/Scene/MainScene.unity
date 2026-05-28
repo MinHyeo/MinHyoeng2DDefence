@@ -163,6 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104cbc74c55be714e8521d05b725e728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StageManager
+  _stageTilemapList:
+  - {fileID: 878975015}
+  - {fileID: 585195322}
+  - {fileID: 653097120}
   _stage1TileMap: {fileID: 878975015}
   _stage2TileMap: {fileID: 585195322}
   _stage3TileMap: {fileID: 653097120}
@@ -551,7 +555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d33d4dc34c6ac7459ef487d58976858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaypointManager
-  _splineContainer: {fileID: 1832536966}
 --- !u!4 &453669029
 Transform:
   m_ObjectHideFlags: 0
@@ -753,7 +756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8cf7e6358ee1414b971e0c2b1f3706c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerManager
-  _tilemap: {fileID: 8631407957232193733}
 --- !u!1 &788323052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,17 +1534,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 300
   m_TargetDisplay: 0
---- !u!114 &1832536966 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6818992722261548265, guid: f3c899cdc42268241a9f1337657f88d7, type: 3}
-  m_PrefabInstance: {fileID: 4824270825563752644}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653097120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
 --- !u!1 &1851715765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,11 +1765,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 878975019}
   m_SourcePrefab: {fileID: 100100000, guid: 27eccb84887e62148bb7195fe0504d9b, type: 3}
---- !u!1839735485 &8631407957232193733 stripped
-Tilemap:
-  m_CorrespondingSourceObject: {fileID: 3781642119155661503, guid: f3c899cdc42268241a9f1337657f88d7, type: 3}
-  m_PrefabInstance: {fileID: 4824270825563752644}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8802272761214649875
 PrefabInstance:
   m_ObjectHideFlags: 0
