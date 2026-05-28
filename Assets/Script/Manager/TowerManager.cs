@@ -10,8 +10,6 @@ public class TowerManager : MonoBehaviour
         Instance = this;
     }
 
-    [SerializeField] private Tilemap _tilemap;
-
     public void CreateTowerTest()
     {
         GameObject towerPrefab = Resources.Load<GameObject>("tower_01");
@@ -22,14 +20,16 @@ public class TowerManager : MonoBehaviour
 
     public bool CanPlaceTower(Vector3 cellPos)
     {
-        Vector3Int vector3Int = _tilemap.WorldToCell(cellPos);
-        if (!_tilemap.HasTile(vector3Int))
+        var tilemap = StageManager.Instance.GetTilemap();
+
+        Vector3Int vector3Int = tilemap.WorldToCell(cellPos);
+        if (!tilemap.HasTile(vector3Int))
         {
             Debug.LogWarning("타일이 없음");
             return false;
         }
 
-        TileBase clickedTile = _tilemap.GetTile(vector3Int);
+        TileBase clickedTile = tilemap.GetTile(vector3Int);
         if (clickedTile.name == "backyard_4")
         {
             Debug.LogWarning("배치 불가능한 타일임");
@@ -50,8 +50,9 @@ public class TowerManager : MonoBehaviour
 
     public void SpawnTower(string towerId, Vector3 cellPos)
     {
-        Vector3Int vector3Int = _tilemap.WorldToCell(cellPos);
-        Vector3 spawnPos = _tilemap.GetCellCenterWorld(vector3Int);
+        var tilemap = StageManager.Instance.GetTilemap();
+        Vector3Int vector3Int = tilemap.WorldToCell(cellPos);
+        Vector3 spawnPos = tilemap.GetCellCenterWorld(vector3Int);
         GameObjectManager.Instance.CreateTowerOjbect(towerId, spawnPos);
     }
 }

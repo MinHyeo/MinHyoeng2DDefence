@@ -35,6 +35,7 @@ public class WaveManager : MonoBehaviour
 
     private void SpawnEnemy(string enemyId) 
     {
+        Debug.Log("스폰 몬스터 위치 조정");
         Vector3 spawnTransform = WaypointManager.Instance.GetWaypoints()[0];
         GameObjectManager.Instance.CreateEnemyOjbect(enemyId, spawnTransform);
     }

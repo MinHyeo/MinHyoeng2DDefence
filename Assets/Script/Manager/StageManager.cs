@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Splines;
+using UnityEngine.Tilemaps;
 
 public class StageManager : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class StageManager : MonoBehaviour
     [SerializeField] private GameObject _stage3TileMap;
 
     private StageData _stageData;
+    private Tilemap _currentTilemap;
 
     private void Awake()
     {
@@ -29,10 +32,12 @@ public class StageManager : MonoBehaviour
         UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.MainUI);
 
         // TileMap 설정
+        _currentTilemap = _stage1TileMap.GetComponent<Tilemap>();
         _stage1TileMap.SetActive(true);
+        WaypointManager.Instance.SetWayPoint();
 
         // 스테이지 데이터 불러오기
-        string stageId = "stage_" + stageIndex;
+        string stageId = "stage_0" + stageIndex;
         LoadStageData(stageId);
     }
     
@@ -40,7 +45,7 @@ public class StageManager : MonoBehaviour
     // MainUI 호출
     // 각 UI에 초기값 셋팅 + 이벤트 구독
 
-    private IEnumerator CoLoadStageData()
+    private IEnumerator CoLoadStageData(string stageId)
     {
         yield return null;
         //LoadStageData();
@@ -49,8 +54,6 @@ public class StageManager : MonoBehaviour
     private void LoadStageData(string stageId)
     {
         _stageData = GameDataManager.Instance.GetStageData(stageId);
-
-        // MAIN UI 호출
 
         if (_stageData == null)
             return;
@@ -61,5 +64,10 @@ public class StageManager : MonoBehaviour
         LifeManager.Instance.SetLifeCount(_stageData.MaxLife);
 
         MeatManager.Instance.SetStartMeatCount(_stageData.StartMeatCount);
+    }
+
+    public Tilemap GetTilemap()
+    {
+        return _currentTilemap;
     }
 }

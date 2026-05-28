@@ -6,7 +6,7 @@ public class WaypointManager : MonoBehaviour
 {
     public static WaypointManager Instance;
 
-    [SerializeField] private SplineContainer _splineContainer;
+    private SplineContainer _splineContainer;
     private List<Vector3> _waypoints = new List<Vector3>();
 
     private void Awake()
@@ -14,8 +14,10 @@ public class WaypointManager : MonoBehaviour
         Instance = this;
     }
 
-    private void OnEnable()
+    public void SetWayPoint()
     {
+        Debug.Log("spline 호출");
+        _splineContainer = StageManager.Instance.GetTilemap().GetComponent<SplineContainer>();
         if (_splineContainer == null)
             return;
 
