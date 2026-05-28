@@ -157,4 +157,12 @@ public class GameDataManager : MonoBehaviour
 
         return _enemyDataList.Keys.ToList();
     }
+
+    public List<string> GetAllStageIds()
+    {
+        if (_stageDataList == null)
+            return null;
+
+        return _stageDataList.Keys.ToList();
+    }
 }

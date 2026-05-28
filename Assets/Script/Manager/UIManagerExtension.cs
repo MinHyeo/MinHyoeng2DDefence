@@ -15,6 +15,7 @@ public enum UIType : byte
     LoadingUI,
     MainUI,
     HudUI,
+    StageSelectUI,
 
     DNSimplePopup,
     DNMyProfilePopup, // 신규UI추가 1) 새로운 UIType을 추가한다
@@ -38,8 +39,10 @@ public static class UIManagerExtension
     public static void ShowStartupUIOnGameStart(this UIManager uiManager)
     {
         //uiManager.OpenLoadingUI();
-        uiManager.OpenUI(UIRootType.MainUI, UIType.MainUI);
-        uiManager.OpenUI(UIRootType.MainUI, UIType.HudUI);
+        //uiManager.OpenUI(UIRootType.MainUI, UIType.MainUI);
+        //uiManager.OpenUI(UIRootType.MainUI, UIType.HudUI);
+        uiManager.OpenUI(UIRootType.ContentUI, UIType.StageSelectUI);
+
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
     }

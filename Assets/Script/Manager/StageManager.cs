@@ -6,7 +6,10 @@ public class StageManager : MonoBehaviour
 {
     public static StageManager Instance;
 
-    private string _stageId = "stage_01";
+    [SerializeField] private GameObject _stage1TileMap;
+    [SerializeField] private GameObject _stage2TileMap;
+    [SerializeField] private GameObject _stage3TileMap;
+
     private StageData _stageData;
 
     private void Awake()
@@ -16,8 +19,21 @@ public class StageManager : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(CoLoadStageData());
+        //StartCoroutine(CoLoadStageData());
         //LoadStageData();
+    }
+
+    public void StartStage(int stageIndex)
+    {
+        // 메인 UI 열기
+        UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.MainUI);
+
+        // TileMap 설정
+        _stage1TileMap.SetActive(true);
+
+        // 스테이지 데이터 불러오기
+        string stageId = "stage_" + stageIndex;
+        LoadStageData(stageId);
     }
     
     // 데이터 세팅
@@ -27,12 +43,12 @@ public class StageManager : MonoBehaviour
     private IEnumerator CoLoadStageData()
     {
         yield return null;
-        LoadStageData();
+        //LoadStageData();
     }
 
-    private void LoadStageData()
+    private void LoadStageData(string stageId)
     {
-        _stageData = GameDataManager.Instance.GetStageData(_stageId);
+        _stageData = GameDataManager.Instance.GetStageData(stageId);
 
         // MAIN UI 호출
 

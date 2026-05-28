@@ -43,7 +43,8 @@ public class UIButton : MonoBehaviour
         }
 
         // 1-1) 외부에서도 등록할 수 있고,
-            // 누군가 누락했다면 등록안해도 알아서 찾아주도록 로직을 넣어 놨다
+        // 누군가 누락했다면 등록안해도 알아서 찾아주도록 로직을 넣어 놨다
+        Debug.Log("버튼 등록");
         var button = this.gameObject.GetComponentInChildren<Button>();
         if(button != null)
         {
