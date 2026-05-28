@@ -13,6 +13,7 @@ public enum UIRootType : byte
 public enum UIType : byte
 {
     LoadingUI,
+    LobbyUI,
     MainUI,
     HudUI,
     StageSelectUI,
@@ -38,10 +39,11 @@ public static class UIManagerExtension
 
     public static void ShowStartupUIOnGameStart(this UIManager uiManager)
     {
+        uiManager.OpenUI(UIRootType.ContentUI, UIType.LobbyUI);
         //uiManager.OpenLoadingUI();
         //uiManager.OpenUI(UIRootType.MainUI, UIType.MainUI);
         //uiManager.OpenUI(UIRootType.MainUI, UIType.HudUI);
-        uiManager.OpenUI(UIRootType.ContentUI, UIType.StageSelectUI);
+        //uiManager.OpenUI(UIRootType.ContentUI, UIType.StageSelectUI);
 
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도

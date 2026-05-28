@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class GameDataManager : MonoBehaviour
 {
     public static GameDataManager Instance;
 
+    private Dictionary<string, object> _dataList = new Dictionary<string, object>();
     private Dictionary<string, EntityData> _entityDataList = new Dictionary<string, EntityData>();
     private Dictionary<string, TowerData> _towerDataList = new Dictionary<string, TowerData>();
     private Dictionary<string, EnemyData> _enemyDataList = new Dictionary<string, EnemyData>();
@@ -28,14 +31,14 @@ public class GameDataManager : MonoBehaviour
 
     public void LoadAllData()
     {
-        LoadEntityData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Entity.json");
-        LoadTowerData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Tower.json");
-        LoadEnemyData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Enemy.json");
-        LoadStageData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Stage.json");
-        LoadWaveData("C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/Wave.json");
+        LoadData<EntityData>("Entity");
+        LoadData<TowerData>("Tower");
+        LoadData<EnemyData>("Enemy");
+        LoadData<StageData>("Stage");
+        LoadData<WaveData>("Wave");
     }
 
-    private Dictionary<string, T> LoadData<T>(string jsonPath) where T : GameDataBase
+    private Dictionary<string, T> LoadJsonData<T>(string jsonPath) where T : GameDataBase
     {
         if (!File.Exists(jsonPath))
         {
@@ -75,94 +78,56 @@ public class GameDataManager : MonoBehaviour
         return new Dictionary<string, T>();
     }
 
-    private void LoadEntityData(string jsonPath)
+    private void LoadData<T>(string path) where T : GameDataBase
     {
-        _entityDataList = LoadData<EntityData>(jsonPath);
-    }
+        string jsonPath = $"C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/{path}.json";
 
-    private void LoadTowerData(string jsonPath)
-    {
-        _towerDataList = LoadData<TowerData>(jsonPath);
-    }
-
-    private void LoadEnemyData(string jsonPath)
-    {
-        _enemyDataList = LoadData<EnemyData>(jsonPath);
-    }
-
-    private void LoadStageData(string jsonPath)
-    {
-        _stageDataList = LoadData<StageData>(jsonPath);
-    }
-
-    private void LoadWaveData(string jsonPath)
-    {
-        _waveDataList = LoadData<WaveData>(jsonPath);
-    }
-
-    public EntityData GetEntityData(string id)
-    {
-        if (_entityDataList == null || string.IsNullOrEmpty(id))
-            return null;
-
-        return _entityDataList.TryGetValue(id, out var data) ? data : null;
-    }
-
-    public TowerData GetTowerData(string id)
-    {
-        if (_towerDataList == null || string.IsNullOrEmpty(id))
-            return null;
-
-        return _towerDataList.TryGetValue(id, out var data) ? data : null;
-    }
-
-    public EnemyData GetEnemyData(string id)
-    {
-        if (_enemyDataList == null || string.IsNullOrEmpty(id))
-            return null;
-
-        return _enemyDataList.TryGetValue(id, out var data) ? data : null;
-    }
-
-    public StageData GetStageData(string id)
-    {
-        if (_stageDataList == null || string.IsNullOrEmpty(id))
-            return null;
-
-        return _stageDataList.TryGetValue(id, out var data) ? data : null;
-    }
-
-    public WaveData GetWaveData(string id)
-    {
-        if (_waveDataList == null || string.IsNullOrEmpty(id))
+        if(_dataList.ContainsKey(path) == false)
         {
-            return null;
+            path = path + "Data";
+            _dataList.Add(path, new Dictionary<string, T>());
         }
 
-        return _waveDataList.TryGetValue(id, out var data) ? data : null;
+        _dataList[path] = LoadJsonData<T>(jsonPath);
+    }
+
+    public T GetData<T>(string id) where T : GameDataBase
+    {
+        string type = typeof(T).FullName;
+        object dictObj = null;
+
+        if (_dataList.TryGetValue(type, out dictObj))
+        {
+            var dict = dictObj as Dictionary<string, T>;
+            return dict[id];
+        }
+        return null;
+    }
+
+    private List<string> GetAllId<T>() where T : GameDataBase
+    {
+        string type = typeof(T).FullName;
+        object dictObj = null;
+        if (_dataList.TryGetValue(type, out dictObj))
+        {
+            var dict = dictObj as Dictionary<string, T>;
+            return dict.Keys.ToList();
+        }
+        return null;
     }
 
     public List<string> GetAllTowerIds()
     {
-        if (_towerDataList == null)
-            return null;
-
-        return _towerDataList.Keys.ToList();
+        return GetAllId<TowerData>();
     }
 
     public List<string> GetAllEnemyIds()
     {
-        if (_enemyDataList == null)
-            return null;
-
-        return _enemyDataList.Keys.ToList();
+        return GetAllId<EnemyData>();
     }
 
     public List<string> GetAllStageIds()
     {
-        if (_stageDataList == null)
-            return null;
-
-        return _stageDataList.Keys.ToList();
+        return GetAllId<StageData>();
     }
 }

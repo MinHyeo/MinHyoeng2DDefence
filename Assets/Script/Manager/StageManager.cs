@@ -53,7 +53,7 @@ public class StageManager : MonoBehaviour
 
     private void LoadStageData(string stageId)
     {
-        _stageData = GameDataManager.Instance.GetStageData(stageId);
+        _stageData = GameDataManager.Instance.GetData<StageData>(stageId);
 
         if (_stageData == null)
             return;

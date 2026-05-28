@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
     {
         _instanceId = instanceId;
 
-        _enemyData = GameDataManager.Instance.GetEnemyData(_tempId);
+        _enemyData = GameDataManager.Instance.GetData<EnemyData>(_tempId);
         _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
         _currentHp = _enemyData.MaxHp;
 

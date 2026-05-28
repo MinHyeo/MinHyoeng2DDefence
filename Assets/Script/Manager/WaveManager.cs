@@ -16,7 +16,7 @@ public class WaveManager : MonoBehaviour
     {
         foreach(string waveId in waveIdList)
         {
-            WaveData waveData = GameDataManager.Instance.GetWaveData(waveId.Trim());
+            WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
             StartCoroutine(CoSpawnWave(waveData));
         }
     }

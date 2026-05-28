@@ -17,7 +17,7 @@ public class GameObjectManager : MonoBehaviour
 
     public void CreateTowerOjbect(string towerDataId, Vector3 spawnPos)
     {
-        var towerData = GameDataManager.Instance.GetTowerData(towerDataId);
+        var towerData = GameDataManager.Instance.GetData<TowerData>(towerDataId);
         if (towerData == null)
         {
             Debug.LogError("towerData 로드 실패");
@@ -71,7 +71,7 @@ public class GameObjectManager : MonoBehaviour
 
     public void CreateEnemyOjbect(string enemyDataId, Vector3 spawnPos)
     {
-        var enemyData = GameDataManager.Instance.GetEnemyData(enemyDataId);
+        var enemyData = GameDataManager.Instance.GetData<EnemyData>(enemyDataId);
         if (enemyData == null)
         {
             Debug.LogError("enemyData 로드 실패");

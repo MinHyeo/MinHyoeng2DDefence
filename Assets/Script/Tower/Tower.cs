@@ -27,7 +27,7 @@ public class Tower : MonoBehaviour
 
     private void OnEnable()
     {
-        _towerData = GameDataManager.Instance.GetTowerData(_tempId);
+        _towerData = GameDataManager.Instance.GetData<TowerData>(_tempId);
         _attackCoolTime = 1f / _towerData.AttackSpeed;
     }
 
