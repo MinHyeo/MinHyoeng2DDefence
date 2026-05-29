@@ -28,15 +28,15 @@ public class WaveManager : MonoBehaviour
         var waitTime = new WaitForSeconds(waveData.Interval);
         for (int i = 0; i < waveData.Count; i++)
         {
-            SpawnEnemy(waveData.EnemyId);
+            SpawnEnemy(waveData.EnemyId, waveData);
             yield return waitTime;
         }
     }
 
-    private void SpawnEnemy(string enemyId) 
+    private void SpawnEnemy(string enemyId, WaveData waveData) 
     {
-        Debug.Log("스폰 몬스터 위치 조정");
-        Vector3 spawnTransform = WaypointManager.Instance.GetWaypoints()[0];
-        GameObjectManager.Instance.CreateEnemyOjbect(enemyId, spawnTransform);
+        int waveGroup = waveData.WaveGroup;
+        Vector3 spawnTransform = WaypointManager.Instance.GetWaypoints(waveGroup)[0];
+        GameObjectManager.Instance.CreateEnemyOjbect(enemyId, spawnTransform, waveGroup);
     }
 }

@@ -7,7 +7,7 @@ public class WaypointManager : MonoBehaviour
     public static WaypointManager Instance;
 
     private SplineContainer _splineContainer;
-    private List<Vector3> _waypoints = new List<Vector3>();
+    private Dictionary<int, List<Vector3>> _waypointList = new Dictionary<int, List<Vector3>>();
 
     private void Awake()
     {
@@ -21,16 +21,21 @@ public class WaypointManager : MonoBehaviour
         if (_splineContainer == null)
             return;
 
-        var spline = _splineContainer.Spline;
-
-        foreach (var knot in spline.Knots)
+        int index = 1;
+        var splineList = _splineContainer.Splines;
+        foreach(var spline in splineList)
         {
-            _waypoints.Add(knot.Position);
+            _waypointList.Add(index, new List<Vector3>());
+            foreach (var knot in spline.Knots)
+            {
+                _waypointList[index].Add(knot.Position);
+            }
+            index++;
         }
     }
 
-    public List<Vector3> GetWaypoints()
+    public List<Vector3> GetWaypoints(int waveGroup)
     {
-        return _waypoints ;
+        return _waypointList[waveGroup];
     }
 }

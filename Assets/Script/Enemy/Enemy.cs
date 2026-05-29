@@ -7,11 +7,10 @@ public class Enemy : MonoBehaviour
 
     private int _instanceId;
     private EnemyData _enemyData;
+    private int _waveGroup;
     private int _waypointIndex = 0;
     private Vector3 _waypoint = Vector3.zero;
     private float _currentHp;
-
-    public string _tempId = "enemy_01";
 
     private event Action<float> _onHpChanged;
 
@@ -30,12 +29,13 @@ public class Enemy : MonoBehaviour
         UIManager.Instance.RemoveHudSlot(_instanceId);
     }
 
-    public void InitEnemyInfoOnCreated(int instanceId)
+    public void InitEnemyInfoOnCreated(int instanceId, string enemyDataId, int waveGroup)
     {
         _instanceId = instanceId;
 
-        _enemyData = GameDataManager.Instance.GetData<EnemyData>(_tempId);
-        _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
+        _enemyData = GameDataManager.Instance.GetData<EnemyData>(enemyDataId);
+        _waveGroup = waveGroup;
+        _waypoint = WaypointManager.Instance.GetWaypoints(_waveGroup)[_waypointIndex];
         _currentHp = _enemyData.MaxHp;
 
         UIManager.Instance.AddHudSlot(_instanceId, this.transform);
@@ -52,13 +52,13 @@ public class Enemy : MonoBehaviour
 
         if (distance < 0.05f)
         {
-            if (WaypointManager.Instance.GetWaypoints().Count <= ++_waypointIndex)
+            if (WaypointManager.Instance.GetWaypoints(_waveGroup).Count <= ++_waypointIndex)
             {
                 GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
                 LifeManager.Instance.DecreaseLifeCount();
                 return;
             }
-            _waypoint = WaypointManager.Instance.GetWaypoints()[_waypointIndex];
+            _waypoint = WaypointManager.Instance.GetWaypoints(_waveGroup)[_waypointIndex];
         }    
     }
 

@@ -27,7 +27,7 @@ public class GameObjectManager : MonoBehaviour
         ResourceManager.Instance.Instantiate(towerData.PrefabPath, this.transform, (createdObject) =>
         {
             createdObject.transform.position = spawnPos;
-            AddEnemyObjectOnCreated(createdObject, towerDataId);
+            AddTowerObjectOnCreated(createdObject, towerDataId);
         });
     }
 
@@ -69,7 +69,7 @@ public class GameObjectManager : MonoBehaviour
         return _createdGameObjectContainer[towerObjectInstanceId];
     }
 
-    public void CreateEnemyOjbect(string enemyDataId, Vector3 spawnPos)
+    public void CreateEnemyOjbect(string enemyDataId, Vector3 spawnPos, int waveGroup)
     {
         var enemyData = GameDataManager.Instance.GetData<EnemyData>(enemyDataId);
         if (enemyData == null)
@@ -81,11 +81,11 @@ public class GameObjectManager : MonoBehaviour
         ResourceManager.Instance.Instantiate(enemyData.PrefabPath, this.transform, (createdObject) =>
         {
             createdObject.transform.position = spawnPos;
-            AddEnemyObjectOnCreated(createdObject, enemyDataId);
+            AddEnemyObjectOnCreated(createdObject, enemyDataId, waveGroup);
         });
     }
 
-    public void AddEnemyObjectOnCreated(GameObject createdObject, string enemyDataId)
+    public void AddEnemyObjectOnCreated(GameObject createdObject, string enemyDataId, int waveGroup)
     {
         _objectInstanceKeyGenerator++;
 
@@ -95,7 +95,7 @@ public class GameObjectManager : MonoBehaviour
         if (enemyComponent != null)
         {
             _createdGameObjectContainer.Add(generatedInstanceId, enemyComponent.gameObject);
-            enemyComponent.InitEnemyInfoOnCreated(generatedInstanceId);
+            enemyComponent.InitEnemyInfoOnCreated(generatedInstanceId, enemyDataId, waveGroup);
         }
     }
 
