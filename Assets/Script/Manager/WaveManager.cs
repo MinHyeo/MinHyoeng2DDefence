@@ -37,6 +37,7 @@ public class WaveManager : MonoBehaviour
     {
         int waveGroup = waveData.WaveGroup;
         Vector3 spawnTransform = WaypointManager.Instance.GetWaypoints(waveGroup)[0];
+        Debug.Log($"{waveGroup} : {enemyId} 몬스터 생성");
         GameObjectManager.Instance.CreateEnemyOjbect(enemyId, spawnTransform, waveGroup);
     }
 }

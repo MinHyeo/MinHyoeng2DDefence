@@ -61,7 +61,7 @@ public class Tower : MonoBehaviour
 
         if(angle > 30)
         {
-            _animator.SetInteger("AttackType", 1);
+            _animator.SetInteger("AttackType", (int)AttackType.AttackUp);
         }
         else if(angle > -30)
         {
