@@ -34,6 +34,11 @@ public class WaypointManager : MonoBehaviour
         }
     }
 
+    public void ResetWaypoint()
+    {
+        _waypointList.Clear();
+    }
+
     public List<Vector3> GetWaypoints(int waveGroup)
     {
         return _waypointList[waveGroup];

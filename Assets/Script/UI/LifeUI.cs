@@ -31,7 +31,7 @@ public class LifeUI : MonoBehaviour
             return;
         }
 
-        if (_lifeIconList.Count < lifeCount)
+        if (_lifeIconList.Count < lifeCount || lifeCount < 0)
             return;
 
         _lifeIconList[lifeCount].SetActive(false);

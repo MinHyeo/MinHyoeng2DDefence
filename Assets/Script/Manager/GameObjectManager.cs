@@ -58,6 +58,28 @@ public class GameObjectManager : MonoBehaviour
         Destroy(towerObjectComponent.gameObject);
     }
 
+    public void RequestDestroyAllTowerObject()
+    {
+        List<int> keysToRemove = new List<int>();
+
+        foreach(var pair in _createdGameObjectContainer)
+        {
+            var towerObjectComponent = GetTowerObjectByInstanceId(pair.Key);
+            if (towerObjectComponent == null)
+            {
+                return;
+            }
+
+            keysToRemove.Add(pair.Key);
+            Destroy(towerObjectComponent.gameObject);
+        }
+
+        foreach(var key in keysToRemove)
+        {
+            _createdGameObjectContainer.Remove(key);
+        }
+    }
+
     public GameObject GetTowerObjectByInstanceId(int towerObjectInstanceId)
     {
         if (_createdGameObjectContainer.ContainsKey(towerObjectInstanceId) == false)

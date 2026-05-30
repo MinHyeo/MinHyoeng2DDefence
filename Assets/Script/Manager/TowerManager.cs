@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class TowerManager : MonoBehaviour
 {
     public static TowerManager Instance;
+
+    private Dictionary<int, GameObject> _spawnedTowerList = new Dictionary<int, GameObject>();
 
     private void Awake()
     {
@@ -54,5 +57,10 @@ public class TowerManager : MonoBehaviour
         Vector3Int vector3Int = tilemap.WorldToCell(cellPos);
         Vector3 spawnPos = tilemap.GetCellCenterWorld(vector3Int);
         GameObjectManager.Instance.CreateTowerOjbect(towerId, spawnPos);
+    }
+
+    public void DestroyAllTower()
+    {
+        GameObjectManager.Instance.RequestDestroyAllTowerObject();
     }
 }

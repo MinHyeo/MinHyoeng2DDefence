@@ -14,15 +14,11 @@ public enum UIType : byte
 {
     LoadingUI,
     LobbyUI,
+    StageSelectUI,
     MainUI,
     HudUI,
-    StageSelectUI,
-
-    DNSimplePopup,
-    DNMyProfilePopup, // 신규UI추가 1) 새로운 UIType을 추가한다
-    DNInventory,
-    DNDialogueUI,
-    DNInfoBookUI
+    ClearPopupUI,
+    FailPopupUI,
 }
 
 public static class UIManagerExtension

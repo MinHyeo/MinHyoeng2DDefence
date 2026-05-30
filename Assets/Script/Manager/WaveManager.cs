@@ -12,9 +12,15 @@ public class WaveManager : MonoBehaviour
         Instance = this;
     }
 
-    public void LoadWaveData(string[] waveIdList)
+    private string[] GetWaveIds(string waveId)
     {
-        foreach(string waveId in waveIdList)
+        return waveId.Split(',');
+    }
+
+    public void LoadWaveData(string waveIds)
+    {
+        var waveIdList = GetWaveIds(waveIds);
+        foreach (string waveId in waveIdList)
         {
             WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
             StartCoroutine(CoSpawnWave(waveData));
@@ -39,5 +45,15 @@ public class WaveManager : MonoBehaviour
         Vector3 spawnTransform = WaypointManager.Instance.GetWaypoints(waveGroup)[0];
         Debug.Log($"{waveGroup} : {enemyId} 몬스터 생성");
         GameObjectManager.Instance.CreateEnemyOjbect(enemyId, spawnTransform, waveGroup);
+    }
+
+    public void StopCoroutineSpawnWave(string waveIds)
+    {
+        var waveIdList = GetWaveIds(waveIds);
+        foreach (string waveId in waveIdList)
+        {
+            WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
+            StopCoroutine(CoSpawnWave(waveData));
+        }
     }
 }

@@ -27,8 +27,16 @@ public class LifeManager : MonoBehaviour
 
     public void DecreaseLifeCount()
     {
+        if (_lifeCount <= 0)
+            return;
+
         _lifeCount -= 1;
         UpdateLifeCountIcon();
+        if (_lifeCount <= 0)
+        {
+            Debug.Log("게임 실패");
+            StageManager.Instance.FailStage();
+        }
     }
 
     private void UpdateLifeCountIcon()

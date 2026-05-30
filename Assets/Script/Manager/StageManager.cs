@@ -26,6 +26,23 @@ public class StageManager : MonoBehaviour
         //LoadStageData();
     }
 
+    public void ClearStage()
+    {
+
+    }
+
+    public void FailStage()
+    {
+        // wave 종료
+        string waveIds = _stageData.WaveId;
+        WaveManager.Instance.StopCoroutineSpawnWave(waveIds);
+
+        // 실패 UI 띄위기
+        UIManager.Instance.OpenUI(UIRootType.PopupUI, UIType.FailPopupUI);
+
+        _stageData = null;
+    }
+
     public void StartStage(int stageIndex)
     {
         // 메인 UI 열기
@@ -58,8 +75,8 @@ public class StageManager : MonoBehaviour
         if (_stageData == null)
             return;
 
-        string[] waveIdList = _stageData.WaveId.Split(',');
-        WaveManager.Instance.LoadWaveData(waveIdList);
+        string wavdIds = _stageData.WaveId;
+        WaveManager.Instance.LoadWaveData(wavdIds);
 
         LifeManager.Instance.SetLifeCount(_stageData.MaxLife);
 
@@ -69,5 +86,16 @@ public class StageManager : MonoBehaviour
     public Tilemap GetTilemap()
     {
         return _currentTilemap;
+    }
+
+    public void ResetStage()
+    {
+        // 타일맵 off
+        _currentTilemap.gameObject.SetActive(false);
+        // wayPoint 초기화
+        WaypointManager.Instance.ResetWaypoint();
+        // 설치된 타워 삭제
+        TowerManager.Instance.DestroyAllTower();
+        // 현재 존재하는 몬스터 제거
     }
 }
