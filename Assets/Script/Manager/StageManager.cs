@@ -97,5 +97,6 @@ public class StageManager : MonoBehaviour
         // 설치된 타워 삭제
         TowerManager.Instance.DestroyAllTower();
         // 현재 존재하는 몬스터 제거
+        GameObjectManager.Instance.RequestDestroyAllEnemyObject();
     }
 }

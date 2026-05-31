@@ -44,8 +44,13 @@ public class TowerManager : MonoBehaviour
         foreach(var hit in hits)
         {
             var component = hit.collider.GetComponent<Tower>();
+            
             if (component != null)
+            {
+                Debug.Log("이미 타워가 있음");
+                Debug.Log(component.name);
                 return false;
+            }
         }
 
         return true;

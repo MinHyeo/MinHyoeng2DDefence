@@ -134,6 +134,28 @@ public class GameObjectManager : MonoBehaviour
         Destroy(enemyObjectComponent.gameObject);
     }
 
+    public void RequestDestroyAllEnemyObject()
+    {
+        List<int> keysToRemove = new List<int>();
+
+        foreach (var pair in _createdGameObjectContainer)
+        {
+            var enemyObjectComponent = GetEnemyObjectByInstanceId(pair.Key);
+            if (enemyObjectComponent == null)
+            {
+                return;
+            }
+
+            keysToRemove.Add(pair.Key);
+            Destroy(enemyObjectComponent.gameObject);
+        }
+
+        foreach (var key in keysToRemove)
+        {
+            _createdGameObjectContainer.Remove(key);
+        }
+    }
+
     public GameObject GetEnemyObjectByInstanceId(int enemyObjectInstanceId)
     {
         if (_createdGameObjectContainer.ContainsKey(enemyObjectInstanceId) == false)

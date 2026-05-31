@@ -16,9 +16,8 @@ public class FailPopupUI : UIBase
         UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.MainUI);
         UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.HudUI);
 
-        // 2. 타일맵 끄기
+        // 2. 스테이지 초기화
         StageManager.Instance.ResetStage();
-        StageManager.Instance.GetTilemap().gameObject.SetActive(false);
 
         // 3. 로비 UI 켜기
         UIManager.Instance.OpenUI(UIRootType.ContentUI, UIType.LobbyUI);
