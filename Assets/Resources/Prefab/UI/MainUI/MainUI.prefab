@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca0b5a4902d6a084582e5918efcb4147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _cardDrowButton: {fileID: 3790155196664311641}
+  _cardDrawButton: {fileID: 3790155196664311641}
   _cardListTransform: {fileID: 3990967479799742468}
 --- !u!1 &4348990594079936913
 GameObject:

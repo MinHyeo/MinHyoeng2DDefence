@@ -7,7 +7,23 @@ public class FailPopupUI : UIBase
 
     private void OnEnable()
     {
+        _retryButton.BindOnClickButtonEvent(RetryStage);
         _lobbyButton.BindOnClickButtonEvent(ReturnLobby);
+    }
+
+    private void RetryStage()
+    {
+        // Stage 리셋 및 UI 끄기
+        UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.MainUI);
+        UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.HudUI);
+        StageManager.Instance.ResetStage();
+
+        // Stgae 다시 시작
+        int stageIndex = StageManager.Instance.StageIndex;
+        StageManager.Instance.StartStage(stageIndex);
+
+        // 4. failPopupUI 끄기
+        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.FailPopupUI);
     }
 
     private void ReturnLobby()

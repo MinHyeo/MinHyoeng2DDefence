@@ -12,6 +12,8 @@ public class StageManager : MonoBehaviour
     [SerializeField] private GameObject _stage2TileMap;
     [SerializeField] private GameObject _stage3TileMap;
 
+    private int _stageIndex = 1;
+    public int StageIndex => _stageIndex;
     private StageData _stageData;
     private Tilemap _currentTilemap;
 
@@ -45,6 +47,8 @@ public class StageManager : MonoBehaviour
 
     public void StartStage(int stageIndex)
     {
+        _stageIndex = stageIndex;
+
         // 메인 UI 열기
         UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.MainUI);
 
@@ -98,5 +102,6 @@ public class StageManager : MonoBehaviour
         TowerManager.Instance.DestroyAllTower();
         // 현재 존재하는 몬스터 제거
         GameObjectManager.Instance.RequestDestroyAllEnemyObject();
+        // 카드 제거
     }
 }

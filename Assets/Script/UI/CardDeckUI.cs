@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CardDeckUI : MonoBehaviour
 {
-    [SerializeField] private UIButton _cardDrowButton;
+    [SerializeField] private UIButton _cardDrawButton;
     [SerializeField] private RectTransform _cardListTransform;
 
     private Dictionary<int, GameObject> _cardList = new Dictionary<int, GameObject>();
@@ -12,7 +12,16 @@ public class CardDeckUI : MonoBehaviour
 
     private void OnEnable()
     {
-        _cardDrowButton.BindOnClickButtonEvent(DrawCard);
+        _cardDrawButton.BindOnClickButtonEvent(DrawCard);
+    }
+
+    private void OnDisable()
+    {
+        foreach(var pair in _cardList)
+        {
+            Destroy(pair.Value);
+        }
+        _cardList.Clear();
     }
 
     private void DrawCard()

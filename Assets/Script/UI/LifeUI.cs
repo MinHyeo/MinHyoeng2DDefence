@@ -10,6 +10,11 @@ public class LifeUI : MonoBehaviour
         LifeManager.Instance.SubscribeUpdateLifeCount(UpdateLifeIcon);
     }
 
+    private void OnDisable()
+    {
+        _lifeIconList = null;
+    }
+
     private void LoadLifeIcon()
     {
         _lifeIconList = new List<GameObject>();
@@ -34,6 +39,10 @@ public class LifeUI : MonoBehaviour
         if (_lifeIconList.Count < lifeCount || lifeCount < 0)
             return;
 
-        _lifeIconList[lifeCount].SetActive(false);
+        for(int i = 0; i < _lifeIconList.Count; i++)
+        {
+            _lifeIconList[i].SetActive(i < lifeCount);
+        }
+        //_lifeIconList[lifeCount].SetActive(false);
     }
 }
