@@ -10,12 +10,20 @@ public class GameDataManager : MonoBehaviour
 {
     public static GameDataManager Instance;
 
+    // 포폴
+    // 박싱/언박싱
+    // object -> dicinory as 박싱/언박싱
+    // 부모 -> 자식 as 박싱/언박싱 x
+    // Dictionary 다운캐스팅
+    // 참조타입이라 다운캐스팅 object에서 dictionary
+    // 스택 -> 힙, 박싱/언박싱
     private Dictionary<string, object> _dataList = new Dictionary<string, object>();
-    private Dictionary<string, EntityData> _entityDataList = new Dictionary<string, EntityData>();
-    private Dictionary<string, TowerData> _towerDataList = new Dictionary<string, TowerData>();
-    private Dictionary<string, EnemyData> _enemyDataList = new Dictionary<string, EnemyData>();
-    private Dictionary<string, StageData> _stageDataList = new Dictionary<string, StageData>();
-    private Dictionary<string, WaveData> _waveDataList = new Dictionary<string, WaveData>();
+    //private Dictionary<string, Dictionary<string, GameDataBase>> _dataList = new Dictionary<string, Dictionary<string, GameDataBase>>();
+    //private Dictionary<string, EntityData> _entityDataList = new Dictionary<string, EntityData>();
+    //private Dictionary<string, TowerData> _towerDataList = new Dictionary<string, TowerData>();
+    //private Dictionary<string, EnemyData> _enemyDataList = new Dictionary<string, EnemyData>();
+    //private Dictionary<string, StageData> _stageDataList = new Dictionary<string, StageData>();
+    //private Dictionary<string, WaveData> _waveDataList = new Dictionary<string, WaveData>();
 
     private void Awake()
     {
@@ -85,10 +93,10 @@ public class GameDataManager : MonoBehaviour
         if(_dataList.ContainsKey(path) == false)
         {
             path = path + "Data";
-            _dataList.Add(path, new Dictionary<string, T>());
+            _dataList.Add(path, new Dictionary<string, GameDataBase>());
         }
 
-        _dataList[path] = LoadJsonData<T>(jsonPath);
+        _dataList[path] = LoadJsonData<GameDataBase>(jsonPath);
     }
 
     public T GetData<T>(string id) where T : GameDataBase
