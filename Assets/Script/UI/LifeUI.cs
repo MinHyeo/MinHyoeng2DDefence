@@ -12,7 +12,6 @@ public class LifeUI : MonoBehaviour
 
     private void OnDisable()
     {
-        _lifeIconList = null;
     }
 
     private void LoadLifeIcon()

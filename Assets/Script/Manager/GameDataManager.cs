@@ -93,10 +93,10 @@ public class GameDataManager : MonoBehaviour
         if(_dataList.ContainsKey(path) == false)
         {
             path = path + "Data";
-            _dataList.Add(path, new Dictionary<string, GameDataBase>());
+            _dataList.Add(path, new Dictionary<string, T>());
         }
 
-        _dataList[path] = LoadJsonData<GameDataBase>(jsonPath);
+        _dataList[path] = LoadJsonData<T>(jsonPath);
     }
 
     public T GetData<T>(string id) where T : GameDataBase

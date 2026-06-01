@@ -14,6 +14,11 @@ public class LifeManager : MonoBehaviour
         Instance = this;
     }
 
+    private void OnDisable()
+    {
+        _onUpdateLifeCount = null;
+    }
+
     public void SubscribeUpdateLifeCount(Action<int> callback)
     {
         _onUpdateLifeCount += callback;

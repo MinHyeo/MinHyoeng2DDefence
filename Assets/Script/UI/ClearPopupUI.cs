@@ -1,23 +1,23 @@
 ﻿using UnityEngine;
 
-public class FailPopupUI : UIBase
+public class ClearPopupUI : UIBase
 {
-    [SerializeField] private UIButton _retryButton;
+    [SerializeField] private UIButton _nextStageButton;
     [SerializeField] private UIButton _lobbyButton;
 
     private void OnEnable()
     {
-        _retryButton.BindOnClickButtonEvent(RetryStage);
+        _nextStageButton.BindOnClickButtonEvent(StartNextStage);
         _lobbyButton.BindOnClickButtonEvent(ReturnLobby);
     }
 
     private void OnDisable()
     {
-        _retryButton.UnBindOnClickButtonEvent(RetryStage);
+        _nextStageButton.UnBindOnClickButtonEvent(StartNextStage);
         _lobbyButton.UnBindOnClickButtonEvent(ReturnLobby);
     }
 
-    private void RetryStage()
+    private void StartNextStage()
     {
         // Stage 리셋 및 UI 끄기
         UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.MainUI);
@@ -25,11 +25,11 @@ public class FailPopupUI : UIBase
         StageManager.Instance.ResetStage();
 
         // Stgae 다시 시작
-        int stageIndex = StageManager.Instance.StageIndex;
-        StageManager.Instance.StartStage(stageIndex);
+        int nextStageIndex = StageManager.Instance.StageIndex + 1;
+        StageManager.Instance.StartStage(nextStageIndex);
 
-        // 4. failPopupUI 끄기
-        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.FailPopupUI);
+        // 4. ClearPopupUI 끄기
+        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.ClearPopupUI);
     }
 
     private void ReturnLobby()
@@ -44,7 +44,7 @@ public class FailPopupUI : UIBase
         // 3. 로비 UI 켜기
         UIManager.Instance.OpenUI(UIRootType.ContentUI, UIType.LobbyUI);
 
-        // 4. failPopupUI 끄기
-        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.FailPopupUI);
+        // 4. ClearPopupUI 끄기
+        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.ClearPopupUI);
     }
 }

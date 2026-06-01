@@ -14,6 +14,7 @@ public class StageManager : MonoBehaviour
 
     private int _stageIndex = 1;
     public int StageIndex => _stageIndex;
+    private bool _isFaild = false;
     private StageData _stageData;
     private Tilemap _currentTilemap;
 
@@ -30,7 +31,11 @@ public class StageManager : MonoBehaviour
 
     public void ClearStage()
     {
+        if (_isFaild)
+            return;
 
+        Debug.Log("게임 클리어");
+        UIManager.Instance.OpenUI(UIRootType.PopupUI, UIType.ClearPopupUI);
     }
 
     public void FailStage()
@@ -43,11 +48,13 @@ public class StageManager : MonoBehaviour
         UIManager.Instance.OpenUI(UIRootType.PopupUI, UIType.FailPopupUI);
 
         _stageData = null;
+        _isFaild = true;
     }
 
     public void StartStage(int stageIndex)
     {
         _stageIndex = stageIndex;
+        _isFaild = false;
 
         // 메인 UI 열기
         UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.MainUI);
@@ -102,6 +109,5 @@ public class StageManager : MonoBehaviour
         TowerManager.Instance.DestroyAllTower();
         // 현재 존재하는 몬스터 제거
         GameObjectManager.Instance.RequestDestroyAllEnemyObject();
-        // 카드 제거
     }
 }

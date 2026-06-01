@@ -7,6 +7,8 @@ public class WaveManager : MonoBehaviour
 {
     public static WaveManager Instance;
 
+    private int _currentWaveEnemyCount = 0;
+
     private void Awake()
     {
         Instance = this;
@@ -20,10 +22,13 @@ public class WaveManager : MonoBehaviour
     public void LoadWaveData(string waveIds)
     {
         var waveIdList = GetWaveIds(waveIds);
+
         foreach (string waveId in waveIdList)
         {
             WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
             StartCoroutine(CoSpawnWave(waveData));
+
+            _currentWaveEnemyCount += waveData.Count;
         }
     }
 
@@ -54,6 +59,19 @@ public class WaveManager : MonoBehaviour
         {
             WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
             StopCoroutine(CoSpawnWave(waveData));
+        }
+    }
+
+    public void DecreaseEnemyCount()
+    {
+        if (_currentWaveEnemyCount <= 0)
+            return;
+
+        _currentWaveEnemyCount -= 1;
+
+        if(_currentWaveEnemyCount <= 0)
+        {
+            StageManager.Instance.ClearStage();
         }
     }
 }

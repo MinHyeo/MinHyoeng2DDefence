@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     private void OnDisable()
     {
         UIManager.Instance.RemoveHudSlot(_instanceId);
+        WaveManager.Instance.DecreaseEnemyCount();
     }
 
     public void InitEnemyInfoOnCreated(int instanceId, string enemyDataId, int waveGroup)
