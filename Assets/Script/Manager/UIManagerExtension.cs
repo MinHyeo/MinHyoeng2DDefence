@@ -19,6 +19,7 @@ public enum UIType : byte
     HudUI,
     ClearPopupUI,
     FailPopupUI,
+    CardListPopup,
 }
 
 public static class UIManagerExtension

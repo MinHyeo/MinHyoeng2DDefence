@@ -19,7 +19,6 @@ public class StageSelectUI : UIBase
         // TODO :따로 클래스를 만들어서 각자 인덱스를 지역변수로 가지고 있고 그걸 가지고 와서 button을 초기화하는 방식으로 구현해야할 듯
         // 람다식을 사용하는 과정에서 외부변수를 사용하면 박싱/언박싱이 발생해서 자원이 소모됨
         // 캡쳐 / 클로저 문제 발생
-
         for (int i = 0; i < _stageButtonList.Count; i++)
         {
             int temp = i;

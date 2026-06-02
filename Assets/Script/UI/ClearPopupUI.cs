@@ -20,6 +20,7 @@ public class ClearPopupUI : UIBase
     private void StartNextStage()
     {
         // Stage 리셋 및 UI 끄기
+        // closeall이 있으면 한줄로 끝남
         UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.MainUI);
         UIManager.Instance.CloseUI(UIRootType.MainUI, UIType.HudUI);
         StageManager.Instance.ResetStage();
