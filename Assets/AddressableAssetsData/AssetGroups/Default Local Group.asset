@@ -15,6 +15,16 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: a670e866bff132c46ad986cc93926b72
   m_SerializeEntries:
+  - m_GUID: 2c94ad32b643ed940b13bec31398c83d
+    m_Address: Sprite/Icon/tower_04_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31e67a3c0f56c5b4bb7cb26fec68b09a
+    m_Address: Prefab/Tower/tower_04
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4c2f31341904dd6488e1e595be712dcc
     m_Address: Prefab/Enemy/enemy_01
     m_ReadOnly: 0

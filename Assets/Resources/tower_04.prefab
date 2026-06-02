@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 319596279670270946}
   - component: {fileID: 8342082389703210376}
   m_Layer: 0
-  m_Name: tower_03
+  m_Name: tower_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 3665477687539864576}
   - component: {fileID: 4168041106145403454}
   m_Layer: 0
-  m_Name: tower_03_Sprite
+  m_Name: tower_04_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7262706838141310234, guid: cec499f96deae6d418ff8dd1ee827b1e, type: 3}
+  m_Sprite: {fileID: -1278038243548508073, guid: 4b798745132ad1d47bd67a319da4a271, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.47058824}
   m_FlipX: 0
   m_FlipY: 0

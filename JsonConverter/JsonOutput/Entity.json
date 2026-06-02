@@ -25,7 +25,7 @@
     "Name": "화살 원시인",
     "Description": "ddd",
     "EntityType": "Tower",
-    "IconPath": "Sprite/Icon/ChickenIcon"
+    "IconPath": "Sprite/Icon/tower_04_icon"
   },
   {
     "Id": "tower_05",
