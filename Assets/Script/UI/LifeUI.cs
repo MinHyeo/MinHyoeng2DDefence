@@ -7,17 +7,12 @@ public class LifeUI : MonoBehaviour
 
     private void OnEnable()
     {
-        LifeManager.Instance.SubscribeUpdateLifeCount(UpdateLifeIcon);
+        StageManager.Instance.BindOnLifeIconUpdate(UpdateLifeIcon);
     }
 
-    private void OnDisable()
-    {
-    }
-
-    private void LoadLifeIcon()
+    private void LoadLifeIcon(int lifeCount)
     {
         _lifeIconList = new List<GameObject>();
-        var lifeCount = LifeManager.Instance.GetLifeCount();
 
         var loadObject = Resources.Load<GameObject>("Prefab/UI/MainUI/LifeIcon");
         for (int i = 0; i < lifeCount; i++)
@@ -31,7 +26,7 @@ public class LifeUI : MonoBehaviour
     {
         if (_lifeIconList == null)
         {
-            LoadLifeIcon();
+            LoadLifeIcon(lifeCount);
             return;
         }
 
@@ -42,6 +37,5 @@ public class LifeUI : MonoBehaviour
         {
             _lifeIconList[i].SetActive(i < lifeCount);
         }
-        //_lifeIconList[lifeCount].SetActive(false);
     }
 }

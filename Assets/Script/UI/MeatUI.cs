@@ -8,7 +8,8 @@ public class MeatUI : MonoBehaviour
 
     private void OnEnable()
     {
-        MeatManager.Instance.SubscribeUpdateMeatCount(UpdateMeatCountText);
+        StageManager.Instance.BindOndMeatCountUpdate(UpdateMeatCountText);
+        //MeatManager.Instance.Bind(UpdateMeatCountText);
     }
 
     private void UpdateMeatCountText(int meatCount)

@@ -3,18 +3,16 @@ using UnityEngine;
 
 public class MeatManager : MonoBehaviour
 {
-    public static MeatManager Instance;
-
     private int _meatCount;
 
     private event Action<int> _onUpdateMeatCount;
 
-    private void Awake()
+    private void OnDisable()
     {
-        Instance = this;
+        _onUpdateMeatCount = null;
     }
 
-    public void SubscribeUpdateMeatCount(Action<int> callback)
+    public void BindOndMeatCountUpdate(Action<int> callback)
     {
         _onUpdateMeatCount += callback;
     }
@@ -25,15 +23,9 @@ public class MeatManager : MonoBehaviour
         UpdateMeatCountText();
     }
 
-    public void IncreaseMeatCount(int increaseCount)
+    public void UpdateMeatCount(int meatAmount)
     {
-        _meatCount += increaseCount;
-        UpdateMeatCountText();
-    }
-
-    public void DecreaseMeatCount(int decreaseCount)
-    {
-        _meatCount -= decreaseCount;
+        _meatCount += meatAmount;
         UpdateMeatCountText();
     }
     

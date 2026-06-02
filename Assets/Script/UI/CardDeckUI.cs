@@ -26,7 +26,7 @@ public class CardDeckUI : MonoBehaviour
 
     private void DrawCard()
     {
-        if (MeatManager.Instance.GetMeatCount() < _cardDrawPrice)
+        if (StageManager.Instance.CanDrawCard() == false)
             return;
 
         string path = $"Prefab/UI/MainUI/CardUI";
@@ -38,7 +38,8 @@ public class CardDeckUI : MonoBehaviour
         string randomTowerId = GetRandomTowerId();
         gObj.GetComponent<CardUI>().InitCardUI(_cardInstanceId, randomTowerId);
 
-        MeatManager.Instance.DecreaseMeatCount(_cardDrawPrice);
+        //MeatManager.Instance.DecreaseMeatCount(_cardDrawPrice);
+        StageManager.Instance.DecreaseMeatCount(_cardDrawPrice);
     }
 
     private string GetRandomTowerId()

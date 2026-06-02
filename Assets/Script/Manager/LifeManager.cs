@@ -3,23 +3,16 @@ using UnityEngine;
 
 public class LifeManager : MonoBehaviour
 {
-    public static LifeManager Instance;
-
     private int _lifeCount;
 
     private event Action<int> _onUpdateLifeCount;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
 
     private void OnDisable()
     {
         _onUpdateLifeCount = null;
     }
 
-    public void SubscribeUpdateLifeCount(Action<int> callback)
+    public void BindLifeIconUpdate(Action<int> callback)
     {
         _onUpdateLifeCount += callback;
     }
@@ -30,18 +23,16 @@ public class LifeManager : MonoBehaviour
         UpdateLifeCountIcon();
     }
 
-    public void DecreaseLifeCount()
+    public bool DecreaseLifeAndCheckDeath()
     {
-        if (_lifeCount <= 0)
-            return;
-
         _lifeCount -= 1;
         UpdateLifeCountIcon();
         if (_lifeCount <= 0)
         {
             Debug.Log("게임 실패");
-            StageManager.Instance.FailStage();
+            return true;
         }
+        return false;
     }
 
     private void UpdateLifeCountIcon()

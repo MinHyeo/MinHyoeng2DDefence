@@ -56,7 +56,8 @@ public class Enemy : MonoBehaviour
             if (WaypointManager.Instance.GetWaypoints(_waveGroup).Count <= ++_waypointIndex)
             {
                 GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
-                LifeManager.Instance.DecreaseLifeCount();
+                //LifeManager.Instance.DecreaseLifeCount();
+                StageManager.Instance.DecreaseLifeCount();
                 return;
             }
             _waypoint = WaypointManager.Instance.GetWaypoints(_waveGroup)[_waypointIndex];
@@ -69,7 +70,8 @@ public class Enemy : MonoBehaviour
         InvokeStatChangedEvnet();
         if(_currentHp <= 0)
         {
-            MeatManager.Instance.IncreaseMeatCount(_enemyData.RewardGold);
+            //MeatManager.Instance.IncreaseMeatCount(_enemyData.RewardGold);
+            StageManager.Instance.IncreaseMeatCount(_enemyData.RewardGold);
             GameObjectManager.Instance.RequestDestroyEnemyObject(_instanceId);
         }
 
