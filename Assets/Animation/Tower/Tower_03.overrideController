@@ -6,14 +6,14 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tower_02
+  m_Name: Tower_03
   m_Controller: {fileID: 9100000, guid: 1c41bff99e7cfb543a1a70d878340d38, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: e7642697c61f7184391bc143d329f06b, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: df9c415bce1660e409fd22c672d7214d, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 34278225121f30341bc671addc729782, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: c9f7dccb1d2fb904e8b2d6f20401215b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d6d28c8805c570449b5fed19b3507304, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e7642697c61f7184391bc143d329f06b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c06e42960a9a6bb4299bebfc507ffcdf, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 046c38e389b4a5a438aa798de15d1e33, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 6a2031f99f50a3146b45f584abc1cf94, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d6d28c8805c570449b5fed19b3507304, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 160afc07f936f8b40a3881953287445c, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: fd28ea28e3950ec4b9d2491d626d8626, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d6d28c8805c570449b5fed19b3507304, type: 2}

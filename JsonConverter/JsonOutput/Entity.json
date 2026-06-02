@@ -18,7 +18,7 @@
     "Name": "돌 원시인",
     "Description": "ss",
     "EntityType": "Tower",
-    "IconPath": "Sprite/Icon/ChickenIcon"
+    "IconPath": "Sprite/Icon/tower_03_icon"
   },
   {
     "Id": "tower_04",

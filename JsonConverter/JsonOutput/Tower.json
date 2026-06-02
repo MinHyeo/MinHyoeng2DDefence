@@ -17,12 +17,25 @@
     "AttackDamage": 10,
     "AttackRange": 1.5,
     "AttackSpeed": 2,
-    "ProjectileSpeed": 10,
-    "MoveType": "Ground, Sky",
+    "ProjectileSpeed": 0,
+    "MoveType": "Ground",
     "BuildPrice": 75,
     "SellPrice": 50,
     "UpgradeId": "ddd",
     "UpgradePrice": 60,
     "PrefabPath": "Prefab/Tower/tower_02"
+  },
+  {
+    "Id": "tower_03",
+    "AttackDamage": 6,
+    "AttackRange": 3,
+    "AttackSpeed": 3,
+    "ProjectileSpeed": 10,
+    "MoveType": "Ground, Sky",
+    "BuildPrice": 50,
+    "SellPrice": 50,
+    "UpgradeId": "ddd",
+    "UpgradePrice": 45,
+    "PrefabPath": "Prefab/Tower/tower_03"
   }
 ]
