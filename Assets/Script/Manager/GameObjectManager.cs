@@ -15,9 +15,9 @@ public class GameObjectManager : MonoBehaviour
         Instance = this;
     }
 
-    public void CreateTowerOjbect(string towerDataId, Vector3 spawnPos)
+    public void CreateTowerOjbect(string towerId, Vector3 spawnPos)
     {
-        var towerData = GameDataManager.Instance.GetData<TowerData>(towerDataId);
+        var towerData = GameDataManager.Instance.GetData<TowerData>(towerId);
         if (towerData == null)
         {
             Debug.LogError("towerData 로드 실패");
@@ -27,11 +27,11 @@ public class GameObjectManager : MonoBehaviour
         ResourceManager.Instance.Instantiate(towerData.PrefabPath, this.transform, (createdObject) =>
         {
             createdObject.transform.position = spawnPos;
-            AddTowerObjectOnCreated(createdObject, towerDataId);
+            AddTowerObjectOnCreated(createdObject, towerId);
         });
     }
 
-    public void AddTowerObjectOnCreated(GameObject createdObject, string towerDataId)
+    public void AddTowerObjectOnCreated(GameObject createdObject, string towerId)
     {
         _objectInstanceKeyGenerator++;
 
@@ -41,7 +41,7 @@ public class GameObjectManager : MonoBehaviour
         if (towerComponent != null)
         {
             _createdGameObjectContainer.Add(generatedInstanceId, towerComponent.gameObject);
-            //towerComponent.InitEnemyInfoOnCreated(generatedInstanceId);
+            towerComponent.InitTowerInfoOnCreated(generatedInstanceId, towerId);
         }
     }
 

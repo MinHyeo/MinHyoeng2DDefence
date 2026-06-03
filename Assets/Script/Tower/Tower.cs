@@ -9,13 +9,13 @@ public enum AttackType
     AttackDown = -1,
 }
 
-public class Tower : MonoBehaviour
+public abstract class Tower : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
 
-    public string _tempId;
-    private TowerData _towerData;
+    private int _instanceId;
+    protected TowerData _towerData;
     private float _attackCoolTime;
     private float _lastAttackTime = 0f;
 
@@ -25,15 +25,16 @@ public class Tower : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
     }
 
-    private void OnEnable()
-    {
-        _towerData = GameDataManager.Instance.GetData<TowerData>(_tempId);
-        _attackCoolTime = 1f / _towerData.AttackSpeed;
-    }
-
     private void Update()
     {
         CheckEnemyInAttackRanage();
+    }
+
+    public void InitTowerInfoOnCreated(int instanceId, string towerId)
+    {
+        _instanceId = instanceId;
+        _towerData = GameDataManager.Instance.GetData<TowerData>(towerId);
+        _attackCoolTime = 1f / _towerData.AttackSpeed;
     }
 
     private void CheckEnemyInAttackRanage()
@@ -51,29 +52,48 @@ public class Tower : MonoBehaviour
         }
     }
 
-    private void OnAttack(Transform target)
+    protected virtual void OnAttack(Transform target)
     {
         _spriteRenderer.flipX = IsEnemyOnLeft(target);
-
         _animator.SetTrigger("IsAttack");
 
         float angle = GetAngle(target);
-
-        if(angle > 30)
+        if (angle > 30)
         {
             _animator.SetInteger("AttackType", (int)AttackType.AttackUp);
         }
-        else if(angle > -30)
+        else if (angle > -30)
         {
-            _animator.SetInteger("AttackType", 0);
+            _animator.SetInteger("AttackType", (int)AttackType.Attack);
         }
         else
         {
-            _animator.SetInteger("AttackType", -1);
+            _animator.SetInteger("AttackType", (int)AttackType.AttackDown);
         }
-
-        target.gameObject.GetComponent<Enemy>().OnDamaged(_towerData.AttackDamage);
     }
+    //private void OnAttack(Transform target)
+    //{
+    //    _spriteRenderer.flipX = IsEnemyOnLeft(target);
+
+    //    _animator.SetTrigger("IsAttack");
+
+    //    float angle = GetAngle(target);
+
+    //    if(angle > 30)
+    //    {
+    //        _animator.SetInteger("AttackType", (int)AttackType.AttackUp);
+    //    }
+    //    else if(angle > -30)
+    //    {
+    //        _animator.SetInteger("AttackType", 0);
+    //    }
+    //    else
+    //    {
+    //        _animator.SetInteger("AttackType", -1);
+    //    }
+
+    //    target.gameObject.GetComponent<Enemy>().OnDamaged(_towerData.AttackDamage);
+    //}
 
     private bool IsEnemyOnLeft(Transform target)
     {

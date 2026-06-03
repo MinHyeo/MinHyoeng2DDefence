@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4179264413007296393, guid: e13dd52139061424b9107fbedfb7ab28, type: 3}
+  m_Sprite: {fileID: 7262706838141310234, guid: cec499f96deae6d418ff8dd1ee827b1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,11 +123,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57943345118305690}
-  - component: {fileID: 5468909123841970228}
   - component: {fileID: 2178932768873985826}
+  - component: {fileID: 9100581026420276423}
   m_Layer: 0
   m_Name: Tower_03
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,19 +148,6 @@ Transform:
   - {fileID: 3126228690086297312}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5468909123841970228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7906369729579294466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dad83f720fd25224095cee8fd662500a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Tower
-  _tempId: tower_03
 --- !u!61 &2178932768873985826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -207,3 +194,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &9100581026420276423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906369729579294466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d40819b9e54f7d4a939b34398511ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RangeTower
+  _projectilePrefab: {fileID: 2659852099543001345, guid: 8d902200967b78a42b47b30fd803a5de, type: 3}
