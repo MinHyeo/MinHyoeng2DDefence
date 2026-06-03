@@ -15,7 +15,9 @@ public class Enemy : MonoBehaviour
 
     private float _currentHp;
     private float _currentDenfece;
+    private float _currentSpeed;
     private Coroutine _armorReduceCoroutine = null;
+    private Coroutine _slowCoroutine = null;
 
     private event Action<float> _onHpChanged;
 
@@ -44,6 +46,7 @@ public class Enemy : MonoBehaviour
         _waypoint = WaypointManager.Instance.GetWaypoints(_waveGroup)[_waypointIndex];
         _currentHp = _enemyData.MaxHp;
         _currentDenfece = _enemyData.Defence;
+        _currentSpeed = _enemyData.MoveSpeed;
 
         UIManager.Instance.AddHudSlot(_instanceId, this.transform);
     }
@@ -52,7 +55,7 @@ public class Enemy : MonoBehaviour
     {
         Vector3 direction = (_waypoint - transform.position).normalized;
 
-        transform.Translate(direction * _enemyData.MoveSpeed * Time.fixedDeltaTime);
+        transform.Translate(direction * _currentSpeed * Time.fixedDeltaTime);
         _spriteRenderer.flipX = direction.x < 0;
 
         float distance = Vector3.Distance(_waypoint, transform.position);
@@ -92,7 +95,21 @@ public class Enemy : MonoBehaviour
 
     public void ApplySlow(float slowPercent, float duration)
     {
+        if (_slowCoroutine != null)
+            return;
 
+        _slowCoroutine = StartCoroutine(CoSlow(slowPercent, duration));
+    }
+
+    private IEnumerator CoSlow(float slowPercent, float duration)
+    {
+        _currentSpeed -= (_currentSpeed * slowPercent);
+        Debug.Log($"이동 속도 감소 : {_enemyData.MoveSpeed} -> {_currentSpeed}");
+
+        yield return new WaitForSeconds(duration);
+
+        _currentSpeed = _enemyData.MoveSpeed;
+        _slowCoroutine = null;
     }
 
     public void OnDamaged(float damaged)

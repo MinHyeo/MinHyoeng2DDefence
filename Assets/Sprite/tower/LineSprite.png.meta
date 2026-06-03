@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c16d499af61c10345898c100f4d0b0d2
+guid: 42e17eb7fadcff74c87529db784dd84f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -899610574125124394
-    second: PoisonArrowImage_0
+      213: -2307677721670271485
+    second: LineSprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoisonArrowImage_0
+      name: LineSprite_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 1271
-        height: 326
+        x: 15
+        y: 20
+        width: 820
+        height: 272
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d4361df2f0f383f0800000000000000
-      internalID: -899610574125124394
+      spriteID: 30eb2c7b65b79ffd0800000000000000
+      internalID: -2307677721670271485
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PoisonArrowImage_0: -899610574125124394
+      LineSprite_0: -2307677721670271485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

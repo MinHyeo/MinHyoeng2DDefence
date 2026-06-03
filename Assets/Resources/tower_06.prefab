@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 319596279670270946}
   - component: {fileID: 8342082389703210376}
   m_Layer: 0
-  m_Name: tower_05
+  m_Name: tower_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 3665477687539864576}
   - component: {fileID: 4168041106145403454}
   m_Layer: 0
-  m_Name: tower_05_Sprite
+  m_Name: tower_06_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,7 +119,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.17, y: 0.17, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7749041405507671766}
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9082758953057506241, guid: 63717afcb365f5a4e9fc580dbeb04b1c, type: 3}
+  m_Sprite: {fileID: 3305275266597908510, guid: 2e439ee6d06dc724abe4c579a21ff255, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.47058824}
   m_FlipX: 0
   m_FlipY: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c16d499af61c10345898c100f4d0b0d2
+guid: e1a0c32360c8518489280523f6381d03
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -899610574125124394
-    second: PoisonArrowImage_0
+      213: -1958361948435053846
+    second: tower_06_icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PoisonArrowImage_0
+      name: tower_06_icon_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 1271
-        height: 326
+        x: 59
+        y: 3
+        width: 446
+        height: 545
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d4361df2f0f383f0800000000000000
-      internalID: -899610574125124394
+      spriteID: ae203e90f2082d4e0800000000000000
+      internalID: -1958361948435053846
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PoisonArrowImage_0: -899610574125124394
+      tower_06_icon_0: -1958361948435053846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

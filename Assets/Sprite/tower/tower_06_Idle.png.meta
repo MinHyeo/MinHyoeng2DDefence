@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 05de458de48cf6b4faf19c3c89c906c3
+guid: 7023b559632493648be8d0d75e85bd51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5162592278843657268
-    second: tower_05_Idle_0
+      213: 6747441505811720255
+    second: tower_06_Idle_0
   - first:
-      213: 5430621115650147212
-    second: tower_05_Idle_1
+      213: -8224817259506410672
+    second: tower_06_Idle_1
   - first:
-      213: -7949619822859200257
-    second: tower_05_Idle_2
+      213: -3802468997081572066
+    second: tower_06_Idle_2
   - first:
-      213: -262786020913557810
-    second: tower_05_Idle_3
+      213: 306518587427398598
+    second: tower_06_Idle_3
   - first:
-      213: 6034344365700535739
-    second: tower_05_Idle_4
+      213: -3370887183818622806
+    second: tower_06_Idle_4
   - first:
-      213: -3302520319543033856
-    second: tower_05_Idle_5
+      213: 5062616527680951977
+    second: tower_06_Idle_5
   - first:
-      213: 3070744419780361662
-    second: tower_05_Idle_6
+      213: -701692850940698171
+    second: tower_06_Idle_6
   - first:
-      213: -8424956035006548135
-    second: tower_05_Idle_7
+      213: -5616473756276134054
+    second: tower_06_Idle_7
   - first:
-      213: -4837920125917884927
-    second: tower_05_Idle_8
+      213: 840198922023785262
+    second: tower_06_Idle_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,12 +137,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tower_05_Idle_0
+      name: tower_06_Idle_0
       rect:
         serializedVersion: 2
-        x: 310
+        x: 250
         y: 802
-        width: 463
+        width: 446
         height: 544
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc3795bcca9ca58b0800000000000000
-      internalID: -5162592278843657268
+      spriteID: f3862a0dc4ab3ad50800000000000000
+      internalID: 6747441505811720255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_05_Idle_1
+      name: tower_06_Idle_1
       rect:
         serializedVersion: 2
-        x: 953
+        x: 909
         y: 802
-        width: 480
+        width: 441
         height: 550
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -174,107 +174,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c83001cc1217d5b40800000000000000
-      internalID: 5430621115650147212
+      spriteID: 05b5e9887449bdd80800000000000000
+      internalID: -8224817259506410672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_05_Idle_2
+      name: tower_06_Idle_2
       rect:
         serializedVersion: 2
-        x: 1585
+        x: 1546
         y: 802
-        width: 491
-        height: 556
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff8d217d3e64da190800000000000000
-      internalID: -7949619822859200257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tower_05_Idle_3
-      rect:
-        serializedVersion: 2
-        x: 2244
-        y: 802
-        width: 480
-        height: 546
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ece428b91856a5cf0800000000000000
-      internalID: -262786020913557810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tower_05_Idle_4
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 127
-        width: 430
-        height: 547
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb5d5f1ba3c4eb350800000000000000
-      internalID: 6034344365700535739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tower_05_Idle_5
-      rect:
-        serializedVersion: 2
-        x: 1002
-        y: 127
-        width: 436
-        height: 547
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 000c02254471b22d0800000000000000
-      internalID: -3302520319543033856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tower_05_Idle_6
-      rect:
-        serializedVersion: 2
-        x: 1662
-        y: 127
-        width: 435
+        width: 458
         height: 538
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -284,19 +196,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebd7501c7c97d9a20800000000000000
-      internalID: 3070744419780361662
+      spriteID: e1d548fe79aea3bc0800000000000000
+      internalID: -3802468997081572066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_05_Idle_7
+      name: tower_06_Idle_3
       rect:
         serializedVersion: 2
-        x: 2266
-        y: 127
-        width: 403
+        x: 2206
+        y: 802
+        width: 446
         height: 544
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -306,8 +218,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 957b62d9f1b841b80800000000000000
-      internalID: -8424956035006548135
+      spriteID: 6c32aa00809f04400800000000000000
+      internalID: 306518587427398598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_06_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 130
+        width: 403
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8f29e47f33831d0800000000000000
+      internalID: -3370887183818622806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_06_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 130
+        width: 414
+        height: 544
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6d176b8e6024640800000000000000
+      internalID: 5062616527680951977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_06_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 130
+        width: 403
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1af3ed1161346f0800000000000000
+      internalID: -701692850940698171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tower_06_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 130
+        width: 441
+        height: 544
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f6bd240e64e02b0800000000000000
+      internalID: -5616473756276134054
       vertices: []
       indices: 
       edges: []
@@ -316,7 +316,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: aa82d6c4ccf2eca438470d8a4b68c2da
+    spriteID: a67829a1b13f4c7449949dcec4503ec5
     internalID: 0
     vertices: []
     indices: 
@@ -326,15 +326,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tower_05_Idle_0: -5162592278843657268
-      tower_05_Idle_1: 5430621115650147212
-      tower_05_Idle_2: -7949619822859200257
-      tower_05_Idle_3: -262786020913557810
-      tower_05_Idle_4: 6034344365700535739
-      tower_05_Idle_5: -3302520319543033856
-      tower_05_Idle_6: 3070744419780361662
-      tower_05_Idle_7: -8424956035006548135
-      tower_05_Idle_8: -4837920125917884927
+      tower_06_Idle_0: 6747441505811720255
+      tower_06_Idle_1: -8224817259506410672
+      tower_06_Idle_2: -3802468997081572066
+      tower_06_Idle_3: 306518587427398598
+      tower_06_Idle_4: -3370887183818622806
+      tower_06_Idle_5: 5062616527680951977
+      tower_06_Idle_6: -701692850940698171
+      tower_06_Idle_7: -5616473756276134054
+      tower_06_Idle_8: 840198922023785262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
