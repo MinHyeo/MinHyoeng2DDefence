@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NUnit.Framework.Constraints;
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -10,7 +12,10 @@ public class Enemy : MonoBehaviour
     private int _waveGroup;
     private int _waypointIndex = 0;
     private Vector3 _waypoint = Vector3.zero;
+
     private float _currentHp;
+    private float _currentDenfece;
+    private Coroutine _armorReduceCoroutine = null;
 
     private event Action<float> _onHpChanged;
 
@@ -38,6 +43,7 @@ public class Enemy : MonoBehaviour
         _waveGroup = waveGroup;
         _waypoint = WaypointManager.Instance.GetWaypoints(_waveGroup)[_waypointIndex];
         _currentHp = _enemyData.MaxHp;
+        _currentDenfece = _enemyData.Defence;
 
         UIManager.Instance.AddHudSlot(_instanceId, this.transform);
     }
@@ -64,9 +70,34 @@ public class Enemy : MonoBehaviour
         }    
     }
 
+    public void ApplyArmorReduce(float reduceAmount, float duration)
+    {
+        if (_armorReduceCoroutine != null)
+            return;
+
+        _armorReduceCoroutine = StartCoroutine(CoArmorReduce(reduceAmount, duration));
+    }
+
+    private IEnumerator CoArmorReduce(float reduceAmount, float duration)
+    {
+        _currentDenfece -= reduceAmount;
+        Debug.Log($"방어력 감소 : {_enemyData.Defence} -> {_currentDenfece}");
+
+        yield return new WaitForSeconds(_currentDenfece);
+
+        Debug.Log("방어력 복구");
+        _currentDenfece += reduceAmount;
+        _armorReduceCoroutine = null;
+    }
+
+    public void ApplySlow(float slowPercent, float duration)
+    {
+
+    }
+
     public void OnDamaged(float damaged)
     {
-        _currentHp -= damaged;
+        _currentHp -= (damaged - _currentDenfece);
         InvokeStatChangedEvnet();
         if(_currentHp <= 0)
         {

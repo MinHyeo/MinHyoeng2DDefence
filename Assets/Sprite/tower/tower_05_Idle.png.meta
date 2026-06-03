@@ -1,49 +1,34 @@
 fileFormatVersion: 2
-guid: cec499f96deae6d418ff8dd1ee827b1e
+guid: 05de458de48cf6b4faf19c3c89c906c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7262706838141310234
-    second: tower_03_attack 1_0
+      213: -5162592278843657268
+    second: tower_05_Idle_0
   - first:
-      213: -5781891097380643648
-    second: tower_03_attack 1_1
+      213: 5430621115650147212
+    second: tower_05_Idle_1
   - first:
-      213: -5190863410373428989
-    second: tower_03_attack 1_2
+      213: -7949619822859200257
+    second: tower_05_Idle_2
   - first:
-      213: 4583404455015156530
-    second: tower_03_attack 1_3
+      213: -262786020913557810
+    second: tower_05_Idle_3
   - first:
-      213: 5637559464991642580
-    second: tower_03_attack 1_4
+      213: 6034344365700535739
+    second: tower_05_Idle_4
   - first:
-      213: -404166316414514518
-    second: tower_03_attack 1_5
+      213: -3302520319543033856
+    second: tower_05_Idle_5
   - first:
-      213: 8965402698591994095
-    second: tower_03_attack 1_6
+      213: 3070744419780361662
+    second: tower_05_Idle_6
   - first:
-      213: 3626278100755096475
-    second: tower_03_attack 1_7
+      213: -8424956035006548135
+    second: tower_05_Idle_7
   - first:
-      213: -6148179393932156723
-    second: tower_03_attack 1_8
-  - first:
-      213: 8234548969812809673
-    second: tower_03_attack 1_9
-  - first:
-      213: -6964086204361716960
-    second: tower_03_attack 1_10
-  - first:
-      213: -561681470392240721
-    second: tower_03_attack 1_11
-  - first:
-      213: -1654199872442189064
-    second: tower_03_attack 1_12
-  - first:
-      213: -3648342484626506250
-    second: tower_03_attack 1_13
+      213: -4837920125917884927
+    second: tower_05_Idle_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -152,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tower_03_attack 1_0
+      name: tower_05_Idle_0
       rect:
         serializedVersion: 2
-        x: 316
-        y: 807
-        width: 309
-        height: 554
+        x: 310
+        y: 802
+        width: 463
+        height: 544
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a15963bc3615ac460800000000000000
-      internalID: 7262706838141310234
+      spriteID: cc3795bcca9ca58b0800000000000000
+      internalID: -5162592278843657268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_1
+      name: tower_05_Idle_1
       rect:
         serializedVersion: 2
-        x: 915
-        y: 807
-        width: 401
-        height: 535
+        x: 953
+        y: 802
+        width: 480
+        height: 550
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,19 +174,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cc12a24ea892cfa0800000000000000
-      internalID: -5781891097380643648
+      spriteID: c83001cc1217d5b40800000000000000
+      internalID: 5430621115650147212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_2
+      name: tower_05_Idle_2
       rect:
         serializedVersion: 2
-        x: 1522
-        y: 807
-        width: 475
+        x: 1585
+        y: 802
+        width: 491
         height: 556
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -211,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3097e1b0b3956f7b0800000000000000
-      internalID: -5190863410373428989
+      spriteID: ff8d217d3e64da190800000000000000
+      internalID: -7949619822859200257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_5
+      name: tower_05_Idle_3
       rect:
         serializedVersion: 2
-        x: 2243
-        y: 808
-        width: 405
-        height: 558
+        x: 2244
+        y: 802
+        width: 480
+        height: 546
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aaa4fe760ec146af0800000000000000
-      internalID: -404166316414514518
+      spriteID: ece428b91856a5cf0800000000000000
+      internalID: -262786020913557810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_10
+      name: tower_05_Idle_4
       rect:
         serializedVersion: 2
-        x: 356
-        y: 133
-        width: 503
-        height: 566
+        x: 354
+        y: 127
+        width: 430
+        height: 547
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b42d39e789a5f90800000000000000
-      internalID: -6964086204361716960
+      spriteID: bb5d5f1ba3c4eb350800000000000000
+      internalID: 6034344365700535739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_11
+      name: tower_05_Idle_5
       rect:
         serializedVersion: 2
-        x: 949
-        y: 133
-        width: 387
-        height: 541
+        x: 1002
+        y: 127
+        width: 436
+        height: 547
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa5f958bda18438f0800000000000000
-      internalID: -561681470392240721
+      spriteID: 000c02254471b22d0800000000000000
+      internalID: -3302520319543033856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_12
+      name: tower_05_Idle_6
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 133
-        width: 337
-        height: 541
+        x: 1662
+        y: 127
+        width: 435
+        height: 538
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fa3697faf91b09e0800000000000000
-      internalID: -1654199872442189064
+      spriteID: ebd7501c7c97d9a20800000000000000
+      internalID: 3070744419780361662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower_03_attack 1_13
+      name: tower_05_Idle_7
       rect:
         serializedVersion: 2
-        x: 2259
-        y: 133
-        width: 309
-        height: 541
+        x: 2266
+        y: 127
+        width: 403
+        height: 544
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,8 +306,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fdfed807db7e5dc0800000000000000
-      internalID: -3648342484626506250
+      spriteID: 957b62d9f1b841b80800000000000000
+      internalID: -8424956035006548135
       vertices: []
       indices: 
       edges: []
@@ -331,7 +316,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 09c71155655585e46836aebaabc440de
+    spriteID: aa82d6c4ccf2eca438470d8a4b68c2da
     internalID: 0
     vertices: []
     indices: 
@@ -341,20 +326,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tower_03_attack 1_0: 7262706838141310234
-      tower_03_attack 1_1: -5781891097380643648
-      tower_03_attack 1_10: -6964086204361716960
-      tower_03_attack 1_11: -561681470392240721
-      tower_03_attack 1_12: -1654199872442189064
-      tower_03_attack 1_13: -3648342484626506250
-      tower_03_attack 1_2: -5190863410373428989
-      tower_03_attack 1_3: 4583404455015156530
-      tower_03_attack 1_4: 5637559464991642580
-      tower_03_attack 1_5: -404166316414514518
-      tower_03_attack 1_6: 8965402698591994095
-      tower_03_attack 1_7: 3626278100755096475
-      tower_03_attack 1_8: -6148179393932156723
-      tower_03_attack 1_9: 8234548969812809673
+      tower_05_Idle_0: -5162592278843657268
+      tower_05_Idle_1: 5430621115650147212
+      tower_05_Idle_2: -7949619822859200257
+      tower_05_Idle_3: -262786020913557810
+      tower_05_Idle_4: 6034344365700535739
+      tower_05_Idle_5: -3302520319543033856
+      tower_05_Idle_6: 3070744419780361662
+      tower_05_Idle_7: -8424956035006548135
+      tower_05_Idle_8: -4837920125917884927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

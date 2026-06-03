@@ -32,14 +32,14 @@
     "Name": "독침 원시인",
     "Description": "ddd",
     "EntityType": "Tower",
-    "IconPath": "Sprite/Icon/ChickenIcon"
+    "IconPath": "Sprite/Icon/tower_05_icon"
   },
   {
     "Id": "tower_06",
     "Name": "밧줄 원시인",
     "Description": "ddd",
     "EntityType": "Tower",
-    "IconPath": "Sprite/Icon/ChickenIcon"
+    "IconPath": "Sprite/Icon/tower_06_icon"
   },
   {
     "Id": "enemy_01",

@@ -50,5 +50,18 @@
     "UpgradeId": "ddd",
     "UpgradePrice": 45,
     "PrefabPath": "Prefab/Tower/tower_04"
+  },
+  {
+    "Id": "tower_05",
+    "AttackDamage": 5,
+    "AttackRange": 4,
+    "AttackSpeed": 3,
+    "ProjectileSpeed": 7,
+    "MoveType": "Ground, Sky",
+    "BuildPrice": 100,
+    "SellPrice": 75,
+    "UpgradeId": "ddd",
+    "UpgradePrice": 46,
+    "PrefabPath": "Prefab/Tower/tower_05"
   }
 ]

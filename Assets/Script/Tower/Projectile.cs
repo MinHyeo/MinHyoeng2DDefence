@@ -41,6 +41,14 @@ public class Projectile : MonoBehaviour
             {
                 Debug.Log("적에게 데미지 부여");
                 enemyComponent.OnDamaged(_damage);
+
+                DebuffBase[] debuffs = GetComponents<DebuffBase>();
+                foreach(var debuff in debuffs)
+                {
+                    Debug.Log("디버프 부여");
+                    debuff.ApplyDebuff(enemyComponent);
+                }
+
                 Destroy(this.gameObject);
             }
         }
