@@ -19,7 +19,8 @@ public enum UIType : byte
     HudUI,
     ClearPopupUI,
     FailPopupUI,
-    CardListPopup,
+    CardListPopupUI,
+    CardInfoPopupUI,
 }
 
 public static class UIManagerExtension
@@ -44,6 +45,18 @@ public static class UIManagerExtension
 
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
+    }
+
+    public static void OpenCardInfoPopup(this UIManager uiManager, string towerId)
+    {
+        var uiBase = uiManager.GetOpenedUI(UIRootType.PopupUI, UIType.CardInfoPopupUI);
+        if (uiBase == null)
+            return;
+
+        if(uiBase is CardInfoUI cardInfoUI)
+        {
+            cardInfoUI.InitCardInfoUI(towerId);
+        }
     }
 
     public static void AddHudSlot(this UIManager uiManager, int instanceId, Transform targetTransform)

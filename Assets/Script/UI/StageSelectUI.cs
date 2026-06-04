@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class StageSelectUI : UIBase
 {
+    [Header("스테이지 버튼들 등록")]
     [SerializeField] private List<UIButton> _stageButtonList;
-    [SerializeField] private UIButton _stageButton;
 
-    [SerializeField] private GameObject _stageButtonPrefab;
+    //[SerializeField] private GameObject _stageButtonPrefab;
 
     private void OnEnable()
     {
@@ -31,17 +31,17 @@ public class StageSelectUI : UIBase
         }
     }
 
-    private void CreateStageButton()
-    {
-        List<string> stageIdList = GameDataManager.Instance.GetAllStageIds();
+    //private void CreateStageButton()
+    //{
+    //    List<string> stageIdList = GameDataManager.Instance.GetAllStageIds();
 
-        int listCount = stageIdList.Count;
-        for (int i = 1; i <= listCount; i++)
-        {
-            Instantiate(_stageButtonPrefab, this.transform);
+    //    int listCount = stageIdList.Count;
+    //    for (int i = 1; i <= listCount; i++)
+    //    {
+    //        Instantiate(_stageButtonPrefab, this.transform);
 
-        }
-    }
+    //    }
+    //}
 
     private void OnSelectedStage(int index)
     {
@@ -55,6 +55,16 @@ public class StageSelectUI : UIBase
 
     private void OnDisable()
     {
+        for (int i = 0; i < _stageButtonList.Count; i++)
+        {
+            int temp = i;
+            _stageButtonList[i].UnBindOnClickButtonEvent(
+                () =>
+                {
+                    OnSelectedStage(temp);
+                }
+            );
+        }
         //_stageButton.UnBindOnClickButtonEvent(OnSelectedStage);
     }
 }

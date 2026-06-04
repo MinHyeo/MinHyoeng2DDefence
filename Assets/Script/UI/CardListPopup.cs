@@ -19,7 +19,7 @@ public class CardListPopup : UIBase
 
     private void ExitPopup()
     {
-        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.CardListPopup);
+        UIManager.Instance.CloseUI(UIRootType.PopupUI, UIType.CardListPopupUI);
     }
 
     private void AddTowerCard()
@@ -32,7 +32,8 @@ public class CardListPopup : UIBase
                 var cardObject = Instantiate(_cardPrefab, _cardRootTransform);
                 var cardComponent = cardObject.GetComponent<CardUI>();
 
-                cardComponent.InitCardUI(_cardInstanceId++, towerId);
+                ICardAction iCardAction = new LobbyCardAction();
+                cardComponent.InitCardUI(_cardInstanceId++, towerId, iCardAction);
                 _createdCardUIList.Add(towerId, cardComponent);
             }
         }

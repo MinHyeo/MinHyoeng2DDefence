@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("UI Canvas Root")]
     [SerializeField] Canvas Canvas_BgRoot;
     [SerializeField] Canvas Canvas_MainRoot;
     [SerializeField] Canvas Canvas_ContentRoot;

@@ -575,7 +575,7 @@ GameObject:
   - component: {fileID: 4718199822001471489}
   - component: {fileID: 4790194239844377254}
   m_Layer: 0
-  m_Name: CardListPopup
+  m_Name: CardListPopupUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

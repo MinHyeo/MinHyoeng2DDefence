@@ -22,6 +22,6 @@ public class LobbyUI : UIBase
 
     private void OpenCardList()
     {
-        UIManager.Instance.OpenUI(UIRootType.PopupUI, UIType.CardListPopup);
+        UIManager.Instance.OpenUI(UIRootType.PopupUI, UIType.CardListPopupUI);
     }
 }

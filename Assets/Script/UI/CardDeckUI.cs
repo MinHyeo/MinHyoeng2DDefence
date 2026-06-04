@@ -36,8 +36,8 @@ public class CardDeckUI : MonoBehaviour
         _cardList[_cardInstanceId++] = gObj;
 
         string randomTowerId = GetRandomTowerId();
-        gObj.GetComponent<CardUI>().InitCardUI(_cardInstanceId, randomTowerId);
-        gObj.AddComponent<CardDragUI>();
+        ICardAction iCardAction = gObj.AddComponent<StageCardAction>();
+        gObj.GetComponent<CardUI>().InitCardUI(_cardInstanceId, randomTowerId, iCardAction);
 
         //MeatManager.Instance.DecreaseMeatCount(_cardDrawPrice);
         StageManager.Instance.DecreaseMeatCount(_cardDrawPrice);
