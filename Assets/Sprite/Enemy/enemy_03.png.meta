@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 0f594713842ba1347a4b226f6d479705
+guid: 3aff6af5eab907d41a96a7676ff1b23a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5336855417275088078
-    second: Chicken_0
+      213: -1128140643825651584
+    second: enemy_03_0
   - first:
-      213: -1433109330887674863
-    second: Chicken_1
+      213: -5444065166428380942
+    second: enemy_03_1
   - first:
-      213: -1642514149361250337
-    second: Chicken_2
+      213: -7656896918523438785
+    second: enemy_03_2
   - first:
-      213: -6988750562667468047
-    second: Chicken_3
+      213: 3353886399585571414
+    second: enemy_03_3
   - first:
-      213: 4026655516392716245
-    second: Chicken_4
+      213: -4263291649223680623
+    second: enemy_03_4
   - first:
-      213: -6345772648950153054
-    second: Chicken_5
+      213: 4150165720872523059
+    second: enemy_03_5
   - first:
-      213: -8344449698215653345
-    second: Chicken_6
+      213: -4463563040833974557
+    second: enemy_03_6
   - first:
-      213: 945601522810511336
-    second: Chicken_7
+      213: 8124275012370493777
+    second: enemy_03_7
   - first:
-      213: -6077634138847768226
-    second: Chicken_8
+      213: 2438139667575637979
+    second: enemy_03_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -137,199 +137,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chicken_0
+      name: enemy_03_0
       rect:
         serializedVersion: 2
-        x: 169
-        y: 848
-        width: 376
-        height: 497
+        x: 94
+        y: 877
+        width: 594
+        height: 553
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eccfc44e9b1501a40800000000000000
-      internalID: 5336855417275088078
+      spriteID: 0807714cf0a0850f0800000000000000
+      internalID: -1128140643825651584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_1
+      name: enemy_03_1
       rect:
         serializedVersion: 2
-        x: 873
-        y: 858
-        width: 359
-        height: 487
+        x: 751
+        y: 879
+        width: 632
+        height: 482
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 114742018a29c1ce0800000000000000
-      internalID: -1433109330887674863
+      spriteID: 2f065f4339bc274b0800000000000000
+      internalID: -5444065166428380942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_2
+      name: enemy_03_2
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 853
-        width: 361
-        height: 492
+        x: 1452
+        y: 882
+        width: 622
+        height: 410
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdf05c4651e9439e0800000000000000
-      internalID: -1642514149361250337
+      spriteID: f3990a112dc3db590800000000000000
+      internalID: -7656896918523438785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_3
+      name: enemy_03_3
       rect:
         serializedVersion: 2
-        x: 2231
-        y: 858
-        width: 387
-        height: 487
+        x: 2185
+        y: 767
+        width: 541
+        height: 416
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fae4682468f20f90800000000000000
-      internalID: -6988750562667468047
+      spriteID: 652df4829e56b8e20800000000000000
+      internalID: 3353886399585571414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_4
+      name: enemy_03_4
       rect:
         serializedVersion: 2
-        x: 164
-        y: 120
-        width: 357
-        height: 489
+        x: 72
+        y: 141
+        width: 627
+        height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d77477abdd81e730800000000000000
-      internalID: 4026655516392716245
+      spriteID: 19d122a35deb5d4c0800000000000000
+      internalID: -4263291649223680623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_5
+      name: enemy_03_5
       rect:
         serializedVersion: 2
-        x: 860
-        y: 119
-        width: 378
-        height: 490
+        x: 751
+        y: 139
+        width: 643
+        height: 483
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a0cfe9a5694fe7a0800000000000000
-      internalID: -6345772648950153054
+      spriteID: 3351c9f0cb9589930800000000000000
+      internalID: 4150165720872523059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_6
+      name: enemy_03_6
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 119
-        width: 357
-        height: 490
+        x: 1501
+        y: 139
+        width: 589
+        height: 553
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f109db3d53f823c80800000000000000
-      internalID: -8344449698215653345
+      spriteID: 3ee4786301d3e02c0800000000000000
+      internalID: -4463563040833974557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_7
+      name: enemy_03_7
       rect:
         serializedVersion: 2
-        x: 2245
-        y: 119
-        width: 377
-        height: 490
+        x: 2180
+        y: 139
+        width: 580
+        height: 554
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ef503233937f1d00800000000000000
-      internalID: 945601522810511336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chicken_8
-      rect:
-        serializedVersion: 2
-        x: 2599
-        y: 63
-        width: 98
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e51113f83f7e7aba0800000000000000
-      internalID: -6077634138847768226
+      spriteID: 151fce954193fb070800000000000000
+      internalID: 8124275012370493777
       vertices: []
       indices: 
       edges: []
@@ -338,7 +316,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 981a56ef7813d51468d300916b8f1a41
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +326,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Chicken_0: 5336855417275088078
-      Chicken_1: -1433109330887674863
-      Chicken_2: -1642514149361250337
-      Chicken_3: -6988750562667468047
-      Chicken_4: 4026655516392716245
-      Chicken_5: -6345772648950153054
-      Chicken_6: -8344449698215653345
-      Chicken_7: 945601522810511336
-      Chicken_8: -6077634138847768226
+      enemy_03_0: -1128140643825651584
+      enemy_03_1: -5444065166428380942
+      enemy_03_2: -7656896918523438785
+      enemy_03_3: 3353886399585571414
+      enemy_03_4: -4263291649223680623
+      enemy_03_5: 4150165720872523059
+      enemy_03_6: -4463563040833974557
+      enemy_03_7: 8124275012370493777
+      enemy_03_8: 2438139667575637979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
