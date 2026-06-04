@@ -114,7 +114,9 @@ public class StageManager : MonoBehaviour
     public void ResetStage()
     {
         // stage 관리 Manager들 제거
+        _meatManager.UnBindOndMeatCountUpdate();
         _meatManager = null;
+        _lifeManager.UnBindLifeIconUpdate();
         _lifeManager = null;
 
         // 타일맵 off

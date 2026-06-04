@@ -1,20 +1,20 @@
 ﻿using System;
 using UnityEngine;
 
-public class LifeManager : MonoBehaviour
+public class LifeManager
 {
     private int _lifeCount;
 
     private event Action<int> _onUpdateLifeCount;
 
-    private void OnDisable()
-    {
-        _onUpdateLifeCount = null;
-    }
-
     public void BindLifeIconUpdate(Action<int> callback)
     {
         _onUpdateLifeCount += callback;
+    }
+
+    public void UnBindLifeIconUpdate()
+    {
+        _onUpdateLifeCount = null;
     }
 
     public void SetLifeCount(int startLifeCount)
