@@ -25,7 +25,7 @@ public class WaveManager : MonoBehaviour
 
         foreach (string waveId in waveIdList)
         {
-            WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
+            WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId);
             StartCoroutine(CoSpawnWave(waveData));
 
             _currentWaveEnemyCount += waveData.Count;
@@ -57,7 +57,7 @@ public class WaveManager : MonoBehaviour
         var waveIdList = GetWaveIds(waveIds);
         foreach (string waveId in waveIdList)
         {
-            WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId.Trim());
+            WaveData waveData = GameDataManager.Instance.GetData<WaveData>(waveId);
             StopCoroutine(CoSpawnWave(waveData));
         }
     }

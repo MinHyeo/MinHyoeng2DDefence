@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public enum AttackType
 {
@@ -18,6 +19,7 @@ public abstract class Tower : MonoBehaviour
     protected TowerData _towerData;
     private float _attackCoolTime;
     private float _lastAttackTime = 0f;
+    private List<string> _attackableTypes = new List<string>();
 
     private void Awake()
     {
@@ -35,6 +37,7 @@ public abstract class Tower : MonoBehaviour
         _instanceId = instanceId;
         _towerData = GameDataManager.Instance.GetData<TowerData>(towerId);
         _attackCoolTime = 1f / _towerData.AttackSpeed;
+        _attackableTypes = _towerData.MoveType.Split(",").ToList<string>();
     }
 
     private void CheckEnemyInAttackRanage()
@@ -54,6 +57,9 @@ public abstract class Tower : MonoBehaviour
 
     protected virtual void OnAttack(Transform target)
     {
+        if (CanAttackTarget(target) == false)
+            return;
+
         _spriteRenderer.flipX = IsEnemyOnLeft(target);
         _animator.SetTrigger("IsAttack");
 
@@ -71,6 +77,7 @@ public abstract class Tower : MonoBehaviour
             _animator.SetInteger("AttackType", (int)AttackType.AttackDown);
         }
     }
+
     //private void OnAttack(Transform target)
     //{
     //    _spriteRenderer.flipX = IsEnemyOnLeft(target);
@@ -94,6 +101,13 @@ public abstract class Tower : MonoBehaviour
 
     //    target.gameObject.GetComponent<Enemy>().OnDamaged(_towerData.AttackDamage);
     //}
+
+    private bool CanAttackTarget(Transform target)
+    {
+        var enemyComponent = target.GetComponent<Enemy>();
+
+        return _attackableTypes.Contains(enemyComponent.MoveType);
+    }
 
     private bool IsEnemyOnLeft(Transform target)
     {

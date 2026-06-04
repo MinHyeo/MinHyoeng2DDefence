@@ -51,7 +51,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5daea9a820257d34db9893ac701ff697
-    m_Address: Assets/Prefab/Enemy/Enemy_05.prefab
+    m_Address: Prefab/Enemy/enemy_05
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

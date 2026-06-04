@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     private float _currentHp;
     private float _currentDenfece;
     private float _currentSpeed;
+    private string _moveType;
+    public string MoveType => _moveType;
     private Coroutine _armorReduceCoroutine = null;
     private Coroutine _slowCoroutine = null;
 
@@ -47,6 +49,7 @@ public class Enemy : MonoBehaviour
         _currentHp = _enemyData.MaxHp;
         _currentDenfece = _enemyData.Defence;
         _currentSpeed = _enemyData.MoveSpeed;
+        _moveType = _enemyData.MoveType;
 
         UIManager.Instance.AddHudSlot(_instanceId, this.transform);
     }
