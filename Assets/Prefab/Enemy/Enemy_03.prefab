@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8380632545181900100}
   - component: {fileID: 6705156293084074209}
   m_Layer: 6
-  m_Name: Enemy_02_Sprite
+  m_Name: Enemy_03_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9122695006515159614, guid: 629b5e4986f0f974cbc7367db16b6e04, type: 3}
+  m_Sprite: {fileID: -1128140643825651584, guid: 3aff6af5eab907d41a96a7676ff1b23a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 6712856079085549074}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: fd095ee446333e640a25d8ae4e6f3fb6, type: 2}
+  m_Controller: {fileID: 22100000, guid: cdf8b9fcf43748642b3d092dedb3da18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 4542209486524155139}
   - component: {fileID: 401905463114518991}
   m_Layer: 6
-  m_Name: Enemy_Pig
+  m_Name: Enemy_03
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,7 +141,7 @@ Transform:
   m_GameObject: {fileID: 7780416514904876949}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.522, y: 2.484, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

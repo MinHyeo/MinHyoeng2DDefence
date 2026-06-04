@@ -6,8 +6,8 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_Pig
+  m_Name: Enemy_01
   m_Controller: {fileID: 9100000, guid: 03d83a07a2b5ed74794ad64fb12f5f7d, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 9be44b1d825fecc4eb679bbc6b3a60c9, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 02df95925d354a14f91f7fdc6445421b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9be44b1d825fecc4eb679bbc6b3a60c9, type: 2}

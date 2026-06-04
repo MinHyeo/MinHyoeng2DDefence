@@ -50,6 +50,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5daea9a820257d34db9893ac701ff697
+    m_Address: Assets/Prefab/Enemy/Enemy_05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7be45ab0593209c40b089f0dff81de4c
     m_Address: Sprite/Icon/tower_01_icon
     m_ReadOnly: 0
@@ -60,8 +65,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d83a6d07fb14ae45a83517ea1a2773a
+    m_Address: Prefab/Enemy/enemy_04
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9714d677bb439d84e953d2e0d9748236
     m_Address: Prefab/Tower/tower_06
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 984fd6db536fdb545acc018a30d1d44e
+    m_Address: Prefab/Enemy/enemy_03
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

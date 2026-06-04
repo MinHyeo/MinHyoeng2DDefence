@@ -42,8 +42,8 @@
   {
     "Id": "wave2_03",
     "WaveGroup": 1,
-    "EnemyId": "enemy_01",
-    "Count": 5,
+    "EnemyId": "enemy_03",
+    "Count": 3,
     "Interval": 0.25,
     "PreDelay": 6
   },
@@ -58,15 +58,15 @@
   {
     "Id": "wave3_02",
     "WaveGroup": 1,
-    "EnemyId": "enemy_01",
-    "Count": 5,
+    "EnemyId": "enemy_04",
+    "Count": 3,
     "Interval": 0.25,
     "PreDelay": 6
   },
   {
     "Id": "wave3_03",
     "WaveGroup": 2,
-    "EnemyId": "enemy_01",
+    "EnemyId": "enemy_05",
     "Count": 5,
     "Interval": 0.25,
     "PreDelay": 6
