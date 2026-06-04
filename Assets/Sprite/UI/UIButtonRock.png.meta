@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 959f0a061f62f06429a219e7c7da2a9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7918928291734335278
+    second: UIButtonRock_0
+  - first:
+      213: 8091389252337321913
+    second: UIButtonRock_1
+  - first:
+      213: 7526278458687230559
+    second: UIButtonRock_2
+  - first:
+      213: 1928962588704560200
+    second: UIButtonRock_3
+  - first:
+      213: 7864510132638237271
+    second: UIButtonRock_4
+  - first:
+      213: 5961883404928753811
+    second: UIButtonRock_5
+  - first:
+      213: 3286319075277641466
+    second: UIButtonRock_6
+  - first:
+      213: -8851455175875196764
+    second: UIButtonRock_7
+  - first:
+      213: 6488005471389002268
+    second: UIButtonRock_8
+  - first:
+      213: 4665176927966796442
+    second: UIButtonRock_9
+  - first:
+      213: 7552933085547989676
+    second: UIButtonRock_10
+  - first:
+      213: 4751051964519622663
+    second: UIButtonRock_11
+  - first:
+      213: 2314117754897184977
+    second: UIButtonRock_12
+  - first:
+      213: -603217581166815279
+    second: UIButtonRock_13
+  - first:
+      213: 1020111099956932471
+    second: UIButtonRock_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UIButtonRock_0
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1129
+        width: 556
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d05269cca05a1290800000000000000
+      internalID: -7918928291734335278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_1
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1129
+        width: 841
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7cafca7a36a4070800000000000000
+      internalID: 8091389252337321913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_2
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 1105
+        width: 885
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f521abad166b27860800000000000000
+      internalID: 7526278458687230559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 790
+        width: 556
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844d0cc114d05ca10800000000000000
+      internalID: 1928962588704560200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_4
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 787
+        width: 550
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752cc543c4a542d60800000000000000
+      internalID: 7864510132638237271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_5
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 787
+        width: 556
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390231f8e5ddcb250800000000000000
+      internalID: 5961883404928753811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_6
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 787
+        width: 556
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6938c89c95b9d20800000000000000
+      internalID: 3286319075277641466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 466
+        width: 567
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a88aa02a60592580800000000000000
+      internalID: -8851455175875196764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_8
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 464
+        width: 567
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aaeeee9960a0a50800000000000000
+      internalID: 6488005471389002268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_9
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 466
+        width: 572
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a1fc5e2b90eb040800000000000000
+      internalID: 4665176927966796442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_10
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 466
+        width: 567
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa0268cf9861d860800000000000000
+      internalID: 7552933085547989676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 145
+        width: 567
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7082d9ee6902fe140800000000000000
+      internalID: 4751051964519622663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_12
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 145
+        width: 567
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8321d56d56d1020800000000000000
+      internalID: 2314117754897184977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_13
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 145
+        width: 562
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d718405ec0f0a7f0800000000000000
+      internalID: -603217581166815279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIButtonRock_14
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 145
+        width: 567
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fad5004a9282e00800000000000000
+      internalID: 1020111099956932471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UIButtonRock_0: -7918928291734335278
+      UIButtonRock_1: 8091389252337321913
+      UIButtonRock_10: 7552933085547989676
+      UIButtonRock_11: 4751051964519622663
+      UIButtonRock_12: 2314117754897184977
+      UIButtonRock_13: -603217581166815279
+      UIButtonRock_14: 1020111099956932471
+      UIButtonRock_2: 7526278458687230559
+      UIButtonRock_3: 1928962588704560200
+      UIButtonRock_4: 7864510132638237271
+      UIButtonRock_5: 5961883404928753811
+      UIButtonRock_6: 3286319075277641466
+      UIButtonRock_7: -8851455175875196764
+      UIButtonRock_8: 6488005471389002268
+      UIButtonRock_9: 4665176927966796442
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
