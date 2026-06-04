@@ -20,8 +20,12 @@ public class Projectile : MonoBehaviour
 
     private void OnMove()
     {
+        // Destory 된다고 바로 코드가 실행이 멈추지 않고 사라지기 전까지 일부분은 실행이 됨
         if (_targetTransform == null)
+        {
             Destroy(this.gameObject);
+            return;
+        }
 
         Vector3 direction = (_targetTransform.position - transform.position).normalized;
 

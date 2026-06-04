@@ -17,6 +17,7 @@ public class GameDataManager : MonoBehaviour
     // Dictionary 다운캐스팅
     // 참조타입이라 다운캐스팅 object에서 dictionary
     // 스택 -> 힙, 박싱/언박싱
+    // 다른 개발자가 object의 사용처를 착각할 수 있다는 단점이 있음
     private Dictionary<string, object> _dataList = new Dictionary<string, object>();
     //private Dictionary<string, Dictionary<string, GameDataBase>> _dataList = new Dictionary<string, Dictionary<string, GameDataBase>>();
     //private Dictionary<string, EntityData> _entityDataList = new Dictionary<string, EntityData>();
