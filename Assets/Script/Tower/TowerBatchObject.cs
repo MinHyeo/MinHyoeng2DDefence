@@ -27,17 +27,13 @@ public class TowerBatchObject : MonoBehaviour, IDragHandler, IPointerUpHandler
     public void OnPointerUp(PointerEventData eventData)
     {
         Debug.Log("배치 시도");
+        bool isPlaceSuccess = false;
         if (TowerManager.Instance.CanPlaceTower(transform.position))
         {
             TowerManager.Instance.SpawnTower(_towerId, transform.position);
-            gameObject.SetActive(false);
-
-            _onPlacementResult?.Invoke(true);
+            isPlaceSuccess = true;
         }
-        else
-        {
-            gameObject.SetActive(false);
-            _onPlacementResult?.Invoke(false);
-        }
+        gameObject.SetActive(false);
+        _onPlacementResult?.Invoke(isPlaceSuccess);
     }
 }
