@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class TowerBatchObject : MonoBehaviour, IDragHandler, IPointerUpHandler
 {
+    [Header("공격 범위 표시 오브젝트")]
+    [SerializeField] private GameObject _attackRangeCircle;
     private string _towerId;
     private Action<bool> _onPlacementResult;
 
@@ -11,6 +13,9 @@ public class TowerBatchObject : MonoBehaviour, IDragHandler, IPointerUpHandler
     {
         _towerId = towerId;
         _onPlacementResult = callback;
+
+        TowerData towerData = GameDataManager.Instance.GetData<TowerData>(towerId);
+        _attackRangeCircle.transform.localScale = new Vector3(towerData.AttackRange, towerData.AttackRange);
     }
 
     public void OnDrag(PointerEventData eventData)
