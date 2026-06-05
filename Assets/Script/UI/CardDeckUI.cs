@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class CardDeckUI : MonoBehaviour
 {
+    [Header("드로우 버튼")]
     [SerializeField] private UIButton _cardDrawButton;
+    [Header("카드 루트 위치")]
     [SerializeField] private RectTransform _cardListTransform;
 
     private Dictionary<int, GameObject> _cardList = new Dictionary<int, GameObject>();

@@ -2,6 +2,7 @@
 
 public class RangeTower : Tower
 {
+    [Header("발사체 프리펩 여기에 담기")]
     [SerializeField] private GameObject _projectilePrefab;
 
     protected override void OnAttack(Transform target)

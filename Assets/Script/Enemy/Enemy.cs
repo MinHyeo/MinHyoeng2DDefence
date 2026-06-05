@@ -37,8 +37,11 @@ public class Enemy : MonoBehaviour
     {
         UIManager.Instance.RemoveHudSlot(_instanceId);
         WaveManager.Instance.DecreaseEnemyCount();
+
+        _onHpChanged = null;
     }
 
+    // 적 생성 시 초기화
     public void InitEnemyInfoOnCreated(int instanceId, string enemyDataId, int waveGroup)
     {
         _instanceId = instanceId;
@@ -54,6 +57,7 @@ public class Enemy : MonoBehaviour
         UIManager.Instance.AddHudSlot(_instanceId, this.transform);
     }
 
+    // 적 이동
     private void OnMove()
     {
         Vector3 direction = (_waypoint - transform.position).normalized;
@@ -76,6 +80,7 @@ public class Enemy : MonoBehaviour
         }    
     }
 
+    // 적 방어력 감소 디버프 적용
     public void ApplyArmorReduce(float reduceAmount, float duration)
     {
         if (_armorReduceCoroutine != null)
@@ -96,6 +101,7 @@ public class Enemy : MonoBehaviour
         _armorReduceCoroutine = null;
     }
 
+    // 적 슬로우 디버프 적용
     public void ApplySlow(float slowPercent, float duration)
     {
         if (_slowCoroutine != null)
@@ -115,6 +121,7 @@ public class Enemy : MonoBehaviour
         _slowCoroutine = null;
     }
 
+    // 데미지 부여
     public void OnDamaged(float damaged)
     {
         _currentHp -= (damaged - _currentDenfece);
@@ -139,11 +146,6 @@ public class Enemy : MonoBehaviour
     public void BindOnStatChangedEvnet(Action<float> hpChangeCallback)
     {
         _onHpChanged += hpChangeCallback;
-    }
-
-    public void ResetStatChangedEvent()
-    {
-        _onHpChanged = null;
     }
 
     private void InvokeStatChangedEvnet()

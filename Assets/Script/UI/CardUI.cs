@@ -5,6 +5,7 @@ using TMPro;
 
 public class CardUI : MonoBehaviour, IDragHandler, IPointerClickHandler
 {
+    [Header("카드 정보 관련 변수")]
     [SerializeField] private TextMeshProUGUI _towerNameText;
     [SerializeField] private Image _towerIconImage;
 

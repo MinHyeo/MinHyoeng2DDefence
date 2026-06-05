@@ -2,6 +2,7 @@
 
 public class LobbyUI : UIBase
 {
+    [Header("로비 버튼 변수")]
     [SerializeField] private UIButton _startButton;
     [SerializeField] private UIButton _cardListButton;
 

@@ -8,6 +8,7 @@ public class StageManager : MonoBehaviour
 {
     public static StageManager Instance;
 
+    [Header("스테이지 타일맵 전부 여기 담기")]
     [SerializeField] private List<GameObject> _stageTilemapList;
     //[SerializeField] private GameObject _stage1TileMap;
     //[SerializeField] private GameObject _stage2TileMap;

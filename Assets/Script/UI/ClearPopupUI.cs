@@ -2,6 +2,7 @@
 
 public class ClearPopupUI : UIBase
 {
+    [Header("클리어 팝업 버튼 변수들")]
     [SerializeField] private UIButton _nextStageButton;
     [SerializeField] private UIButton _lobbyButton;
 

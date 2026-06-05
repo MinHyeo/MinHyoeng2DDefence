@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class CardListPopup : UIBase
 {
+    [Header("끄기 버튼")]
     [SerializeField] private UIButton _exitButton;
+    [Header("카드 관련 변수")]
     [SerializeField] private GameObject _cardPrefab;
     [SerializeField] private Transform _cardRootTransform;
 

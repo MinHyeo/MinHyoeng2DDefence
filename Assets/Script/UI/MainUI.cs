@@ -2,6 +2,7 @@
 
 public class MainUI : UIBase
 {
+    [Header("치트 버튼")]
     [SerializeField] UIButton cheatButton;
 
     private void OnEnable()
