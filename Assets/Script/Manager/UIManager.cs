@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,6 +48,11 @@ public class UIManager : MonoBehaviour
 
     public void CloseUI(UIRootType uiRootType, UIType uiType)
     {
+        foreach(var d in _openedUIDic)
+        {
+            Debug.Log(d.ToString());
+        }
+
         if (_openedUIDic.Contains(uiType))
         {
             var openedUi = _createdUIDic[uiType];

@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class HudUI : UIBase
 {
+    [Header("체력바 프리팹")]
     [SerializeField] private GameObject _hudSlotPrefab;
+    [Header("체력바 Root")]
     [SerializeField] private Transform _slotRootTransform;
 
     private Dictionary<int, HudSlotUI> _hudSlotList = new Dictionary<int, HudSlotUI>();

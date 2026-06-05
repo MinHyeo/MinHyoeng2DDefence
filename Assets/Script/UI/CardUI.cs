@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class CardUI : MonoBehaviour, IDragHandler, IPointerClickHandler
 {
-    [SerializeField] private Text _towerNameText;
+    [SerializeField] private TextMeshProUGUI _towerNameText;
     [SerializeField] private Image _towerIconImage;
 
     private int _instanceId;

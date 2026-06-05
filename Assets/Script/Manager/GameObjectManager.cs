@@ -8,7 +8,7 @@ public class GameObjectManager : MonoBehaviour
 
     public static GameObjectManager Instance;
 
-    public int _objectInstanceKeyGenerator = 0;
+    private int _objectInstanceKeyGenerator = 0;
 
     private void Awake()
     {

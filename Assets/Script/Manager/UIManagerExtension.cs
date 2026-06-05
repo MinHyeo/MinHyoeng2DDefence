@@ -49,7 +49,7 @@ public static class UIManagerExtension
 
     public static void OpenCardInfoPopup(this UIManager uiManager, string towerId)
     {
-        var uiBase = uiManager.GetOpenedUI(UIRootType.PopupUI, UIType.CardInfoPopupUI);
+        var uiBase = uiManager.OpenUI(UIRootType.PopupUI, UIType.CardInfoPopupUI);
         if (uiBase == null)
             return;
 

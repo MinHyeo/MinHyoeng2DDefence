@@ -1,4 +1,5 @@
-﻿using TMPro.SpriteAssetUtilities;
+﻿using TMPro;
+using TMPro.SpriteAssetUtilities;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +10,13 @@ public class CardInfoUI : UIBase
 
     [Header("Tower Base Info")]
     [SerializeField] private Image _towerIcon;
-    [SerializeField] private Text _towerName;
-    [SerializeField] private Text _towerDescription;
+    [SerializeField] private TextMeshProUGUI _towerName;
+    [SerializeField] private TextMeshProUGUI _towerDescription;
 
     [Header("Tower Stat")]
-    [SerializeField] private Text _towerAttackPower;
-    [SerializeField] private Text _towerAttackRange;
-    [SerializeField] private Text _towerAttackSpeed;
+    [SerializeField] private TextMeshProUGUI _towerAttackPower;
+    [SerializeField] private TextMeshProUGUI _towerAttackRange;
+    [SerializeField] private TextMeshProUGUI _towerAttackSpeed;
 
     private void OnEnable()
     {

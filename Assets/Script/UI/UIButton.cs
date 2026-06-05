@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UIButton : MonoBehaviour
 {
+    [Header("버튼 요소")]
     [SerializeField] private Button Button_Base;
     [SerializeField] private Text Text_Base;
     [SerializeField] private Image Image_Base;

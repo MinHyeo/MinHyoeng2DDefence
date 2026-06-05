@@ -1,10 +1,12 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MeatUI : MonoBehaviour
 {
-    [SerializeField] private Text _meatCountText;
+    [Header("고기 재화 텍스트")]
+    [SerializeField] private TextMeshProUGUI _meatCountText;
 
     private void OnEnable()
     {
