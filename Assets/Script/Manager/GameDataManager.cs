@@ -89,9 +89,14 @@ public class GameDataManager : MonoBehaviour
 
     private void LoadData<T>(string path) where T : GameDataBase
     {
-        string jsonPath = $"C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/{path}.json";
+        //string jsonPath = $"C:/OZ_Project/MinHyeong2DProject/JsonConverter/JsonOutput/{path}.json";
+        string jsonPath = Path.Combine(Application.streamingAssetsPath + "/" + path + ".json");
+        // LocalLow
+        //Application.persistentDataPath
+        //string jsonPath = Application.streamingAssetsPath + "/" + path + ".json";
+        Debug.Log(jsonPath);
 
-        if(_dataList.ContainsKey(path) == false)
+        if (_dataList.ContainsKey(path) == false)
         {
             path = path + "Data";
             _dataList.Add(path, new Dictionary<string, T>());
